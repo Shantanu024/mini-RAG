@@ -1,0 +1,112 @@
+CONSTRUCTION MARKETPLACE - FREQUENTLY ASKED QUESTIONS (FAQ)
+
+Document: Platform FAQ
+Version: 3.0
+Last Updated: February 2024
+
+---
+
+Q1: How do I get started as a contractor on this platform?
+A: To register as a contractor, follow these steps:
+1. Create an account and complete your business profile.
+2. Upload your contractor license, insurance certificates, and any relevant certifications.
+3. Complete the identity verification process.
+4. Submit three professional references.
+5. Once approved (typically 3-5 business days), you can start bidding on projects.
+
+Q2: What types of construction projects are supported on the platform?
+A: The platform supports a wide range of construction projects including:
+- Residential construction (new homes, additions, renovations)
+- Commercial construction (offices, retail spaces, warehouses)
+- Industrial construction (factories, plants, infrastructure)
+- Specialty work (electrical, plumbing, HVAC, roofing)
+- Civil construction (roads, bridges, utilities)
+
+Q3: How are contractor bids evaluated?
+A: Bids are evaluated based on multiple criteria:
+- Price competitiveness (40% weight)
+- Contractor rating and reviews (30% weight)
+- Relevant experience and past projects (20% weight)
+- Timeline commitment (10% weight)
+Project owners can adjust these criteria based on project priorities.
+
+Q4: What happens if a contractor abandons a project?
+A: If a contractor abandons a project:
+- The remaining escrowed funds are released to the project owner.
+- The contractor's rating is severely penalized.
+- The platform may suspend or permanently ban repeat offenders.
+- The project owner may seek damages through the platform's dispute resolution system.
+- A substitute contractor listing is expedited.
+
+Q5: How does the platform handle material procurement?
+A: The platform offers two options:
+- Owner-furnished materials: The project owner purchases materials directly.
+- Contractor-furnished materials: The contractor procures materials, included in the contract price.
+For contractor-furnished materials, receipts and invoices must be submitted for transparency.
+
+Q6: What are the platform fees?
+A: Platform fees are structured as follows:
+- Project owners: Free to post projects; 2.5% transaction fee on payments processed.
+- Contractors: 5% service fee on earned project revenue.
+- Premium subscriptions available for enhanced visibility and features.
+
+Q7: How is project quality assured?
+A: Quality assurance mechanisms include:
+- Mandatory milestone inspections before payment release.
+- Client review and rating system post-project completion.
+- Third-party inspection services available for large projects.
+- Dispute resolution team for quality complaints.
+
+Q8: What insurance is required for projects?
+A: Insurance requirements vary by project size:
+- Projects under $50,000: General liability insurance ($500,000 minimum).
+- Projects $50,000 - $500,000: General liability ($1,000,000) + workers' comp.
+- Projects over $500,000: General liability ($2,000,000) + workers' comp + builder's risk insurance.
+- Specialty projects may require additional coverage (e.g., professional liability).
+
+Q9: How are construction delays handled on the platform?
+A: The platform has a structured delay management process:
+- Contractors must report anticipated delays 48 hours in advance.
+- Delay reasons are classified as contractor-caused, client-caused, or force majeure.
+- Contractor-caused delays may trigger liquidated damages per contract terms.
+- Clients can approve timeline extensions through the platform dashboard.
+- All delay communications must be documented in the platform's messaging system.
+
+Q10: Can subcontractors be used on projects?
+A: Yes, with conditions:
+- Primary contractors may subcontract up to 40% of the work value.
+- All subcontractors must also be verified on the platform.
+- Primary contractor remains fully responsible for subcontractor work quality.
+- Subcontractors must be disclosed to the project owner before engagement.
+
+Q11: What is the process for project change orders?
+A: Change orders follow a formal process:
+1. Contractor identifies scope change and prepares change order request.
+2. Change order includes description, cost impact, and timeline impact.
+3. Client reviews and approves/rejects through the platform.
+4. Approved change orders become addendums to the original contract.
+5. Payment for change orders follows the same escrow and milestone process.
+
+Q12: How does the rating and review system work?
+A: Both project owners and contractors receive ratings:
+- Ratings are on a 1-5 star scale.
+- Reviews are posted after project completion.
+- Reviews are verified (only parties involved in the project can review).
+- Dispute resolution team reviews complaints of fraudulent reviews.
+- Consistently low-rated contractors (below 3.0) face account review.
+
+Q13: What environmental regulations must contractors comply with?
+A: Contractors must comply with applicable environmental regulations:
+- Clean Water Act requirements for stormwater management.
+- Clean Air Act compliance for dust and emission controls.
+- Hazardous waste disposal per EPA regulations.
+- Local environmental impact requirements.
+- LEED certification requirements if specified in the project.
+
+Q14: How is worker safety enforced on projects?
+A: Worker safety is enforced through:
+- Mandatory OSHA compliance certification for all contractors.
+- Safety plans required for projects over $100,000.
+- Random safety audits by platform-certified inspectors.
+- Incident reporting integrated into the platform.
+- Contractors with poor safety records are subject to removal.

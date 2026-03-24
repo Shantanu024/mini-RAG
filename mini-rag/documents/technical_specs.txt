@@ -1,0 +1,140 @@
+CONSTRUCTION MARKETPLACE - TECHNICAL SPECIFICATIONS
+
+Document: Material and Technical Specifications
+Version: 1.5
+Last Updated: March 2024
+
+---
+
+SECTION A: CONCRETE SPECIFICATIONS
+
+A1: General Concrete Requirements
+- Minimum compressive strength: 3,000 PSI for residential, 4,000 PSI for commercial.
+- Water-cement ratio: Maximum 0.45 for exposed surfaces, 0.50 for interior.
+- Slump: 3-5 inches for standard pours, 4-7 inches for pumped concrete.
+- Air entrainment: 5-7% for freeze-thaw environments.
+
+A2: Concrete Curing Requirements
+- Wet curing minimum 7 days for standard concrete.
+- Temperature must remain above 50°F during curing.
+- Curing compounds must meet ASTM C309 standards.
+- High-strength concrete may require extended curing periods.
+
+A3: Reinforcement Requirements
+- Rebar grade: Grade 60 (minimum) for structural applications.
+- Concrete cover: 3 inches for footings, 2 inches for slabs, 1.5 inches for columns.
+- Lap splice length: Minimum 40 bar diameters for tension splices.
+
+---
+
+SECTION B: STRUCTURAL STEEL SPECIFICATIONS
+
+B1: Steel Material Standards
+- All structural steel must conform to ASTM A36 or A992.
+- Bolts: ASTM A325 or A490 high-strength bolts for structural connections.
+- Welding: AWS D1.1 Structural Welding Code compliance required.
+- Surface preparation: SSPC-SP6 (commercial blast) minimum for painted steel.
+
+B2: Steel Fabrication Requirements
+- Shop drawings required for all structural steel prior to fabrication.
+- Mill certifications must accompany all steel deliveries.
+- Non-destructive testing (NDT) for critical welds in high-occupancy structures.
+
+---
+
+SECTION C: FOUNDATION SPECIFICATIONS
+
+C1: Soil Investigation Requirements
+- Geotechnical investigation required for all commercial projects.
+- Soil bearing capacity must be determined before foundation design.
+- Expansive soils require special foundation design (drilled piers, post-tensioned slabs).
+
+C2: Foundation Types and Applications
+Shallow Foundations:
+- Spread footings: For well-bearing soil with capacity >1,500 psf.
+- Mat foundations: For poor soil conditions or heavy loads.
+- Minimum frost depth requirements vary by geographic location.
+
+Deep Foundations:
+- Driven piles: Steel H-piles, precast concrete piles for deep bearing layers.
+- Drilled piers (caissons): For large load concentrations.
+- Micro-piles: For limited access sites or retrofit applications.
+
+---
+
+SECTION D: MECHANICAL, ELECTRICAL, PLUMBING (MEP) SPECIFICATIONS
+
+D1: HVAC Requirements
+- Energy efficiency: Must meet ASHRAE 90.1 standards.
+- Fresh air ventilation: Minimum 0.15 CFM per square foot per ASHRAE 62.1.
+- Equipment access: Minimum 36-inch clearance for maintenance.
+- Ductwork: Sheet metal per SMACNA standards; insulated to meet energy codes.
+
+D2: Electrical Requirements
+- Service entrance: Sized per NEC Article 230.
+- Grounding: Per NEC Article 250.
+- GFCI protection: All kitchen, bath, garage, outdoor, and basement receptacles.
+- AFCI protection: All bedroom circuits in residential construction.
+- Commercial lighting: Must meet ASHRAE 90.1 lighting power density limits.
+
+D3: Plumbing Requirements
+- Water supply: Minimum 45 PSI at fixtures, maximum 80 PSI.
+- Hot water temperature: 120°F at fixtures for scalding prevention; 140°F at water heater.
+- Drain, waste, vent: Per International Plumbing Code (IPC) or local equivalent.
+- Backflow prevention: Required per local water authority standards.
+
+---
+
+SECTION E: ROOFING SPECIFICATIONS
+
+E1: Sloped Roofing (>2:12 pitch)
+- Asphalt shingles: Minimum 30-year architectural grade.
+- Ice and water shield: Required at eaves, valleys, and penetrations.
+- Underlayment: Synthetic minimum in all new construction.
+- Metal roofing: Minimum 24-gauge; concealed fastener systems preferred.
+
+E2: Low-Slope Roofing (<2:12 pitch)
+- TPO membrane: Minimum 60-mil thickness; heat-welded seams.
+- EPDM membrane: Minimum 60-mil; fully-adhered or ballasted.
+- Modified bitumen: SBS or APP-modified; torch-down or cold-applied.
+- Drainage: Maximum 1/4 inch per foot slope to drains.
+
+E3: Roofing Warranties
+- Manufacturer product warranty: 20-30 years depending on system.
+- Workmanship warranty: Minimum 2 years required by platform.
+- NDL (No Dollar Limit) warranties available for qualifying systems.
+
+---
+
+SECTION F: SUSTAINABILITY AND GREEN BUILDING
+
+F1: Energy Efficiency Standards
+- New construction: Must meet current IECC (International Energy Conservation Code).
+- Commercial: ASHRAE 90.1 compliance required.
+- Green building certifications accepted: LEED, ENERGY STAR, Green Globes.
+
+F2: Sustainable Materials
+- Recycled content: Encouraged for steel (>25% recycled), carpet (>10%), concrete aggregate.
+- Regional materials: Preference for materials sourced within 500 miles.
+- Low-VOC: Required for interior paints, adhesives, sealants, and flooring.
+- Certified wood: FSC-certified lumber preferred for wood framing.
+
+F3: Water Conservation
+- Low-flow fixtures: Required in all new construction.
+- Irrigation efficiency: Drip irrigation and smart controllers for landscaping.
+- Rainwater harvesting: Permitted in most jurisdictions; check local regulations.
+- Greywater reuse: Allowed for irrigation in states with enabling legislation.
+
+---
+
+SECTION G: CONSTRUCTION WASTE MANAGEMENT
+
+G1: Waste Diversion Requirements
+- Projects over $500,000: Minimum 50% construction waste diversion from landfill.
+- Separate waste streams required: Wood, metal, drywall, concrete, cardboard.
+- Hazardous waste (lead paint, asbestos, PCBs): Licensed disposal contractors required.
+
+G2: Material Salvage
+- Pre-demolition surveys recommended for salvage opportunities.
+- Architectural salvage encouraged for doors, hardware, fixtures.
+- Material exchanges and donations to Habitat for Humanity ReStores permitted.

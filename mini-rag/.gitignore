@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Vector store artifacts (auto-generated on first run)
+backend/vector_store/faiss_index.bin
+backend/vector_store/chunks.json
+
+# Evaluation reports
+scripts/evaluation_report.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

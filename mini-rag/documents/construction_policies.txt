@@ -1,0 +1,139 @@
+CONSTRUCTION MARKETPLACE - POLICIES AND GUIDELINES
+
+Document: Project Management Policies
+Version: 2.1
+Last Updated: January 2024
+
+---
+
+SECTION 1: PROJECT INITIATION
+
+1.1 Contractor Onboarding Requirements
+All contractors must complete a verification process before listing services on the platform. This includes:
+- Valid contractor license (state-issued)
+- Proof of general liability insurance (minimum $1,000,000 per occurrence)
+- Workers' compensation insurance for employees
+- Background check completion within the last 2 years
+- Minimum 3 verifiable references from prior projects
+
+1.2 Project Listing Standards
+Projects must include:
+- Detailed scope of work description
+- Estimated timeline with milestones
+- Budget range with line-item breakdown
+- Required permits and regulatory approvals
+- Material specifications
+
+---
+
+SECTION 2: CONSTRUCTION PROJECT DELAYS
+
+2.1 Common Causes of Project Delays
+Construction project delays are one of the most significant challenges in the industry. The following factors are known to contribute to delays:
+
+Weather-Related Delays:
+- Extreme weather conditions such as heavy rainfall, flooding, snow, or extreme heat can halt construction activities.
+- Seasonal weather patterns must be factored into project scheduling.
+- Force majeure clauses protect contractors from penalties during natural disasters.
+
+Supply Chain Issues:
+- Shortage of construction materials (lumber, steel, concrete) can pause work.
+- Global supply chain disruptions impact lead times for specialized equipment.
+- Material price volatility can cause budget overruns leading to work stoppages.
+
+Labor Shortages:
+- Skilled labor shortages in trades such as electricians, plumbers, and welders.
+- High turnover rates among construction workers.
+- Seasonal labor availability fluctuations.
+
+Design and Planning Issues:
+- Incomplete or unclear architectural/engineering drawings.
+- Last-minute design changes requested by clients.
+- Conflicts between structural, MEP (Mechanical, Electrical, Plumbing) designs.
+
+Permit and Regulatory Delays:
+- Slow permit approval processes from municipal authorities.
+- Unexpected code compliance issues discovered during inspections.
+- Environmental compliance requirements and surveys.
+
+Site Conditions:
+- Unforeseen underground utilities or archaeological findings.
+- Poor soil conditions requiring additional foundation work.
+- Contaminated soil requiring remediation before construction.
+
+2.2 Delay Mitigation Strategies
+- Conduct thorough pre-construction site assessments.
+- Build buffer time (10-15%) into project schedules.
+- Establish backup suppliers for critical materials.
+- Maintain clear communication protocols between all parties.
+- Use project management software to track milestones.
+
+2.3 Delay Penalty Clauses
+Standard contracts on this platform include:
+- Liquidated damages of $500-$2,000 per day for contractor-caused delays.
+- No penalty for documented force majeure events.
+- Client-caused delays entitle the contractor to time extensions and cost recovery.
+
+---
+
+SECTION 3: SAFETY STANDARDS
+
+3.1 Mandatory Safety Requirements
+All construction projects must comply with OSHA standards. Key requirements include:
+- Personal Protective Equipment (PPE): Hard hats, safety vests, steel-toed boots are mandatory on all sites.
+- Fall Protection: Required for work at heights above 6 feet.
+- Scaffolding: Must be inspected daily and certified by a competent person.
+- Electrical Safety: Lockout/Tagout (LOTO) procedures must be followed.
+- Hazard Communication: All chemical hazards must be labeled and SDS (Safety Data Sheets) available.
+
+3.2 Incident Reporting
+- All injuries must be reported within 24 hours.
+- OSHA recordable incidents require documentation and investigation.
+- Near-miss events must be reported and reviewed.
+
+3.3 Site Safety Inspections
+- Weekly safety inspections are required.
+- Third-party safety audits for projects exceeding $1 million.
+
+---
+
+SECTION 4: PAYMENT TERMS AND DISPUTES
+
+4.1 Standard Payment Structure
+The platform supports the following payment structures:
+- Milestone-based payments (recommended for projects over $50,000)
+- Percentage of completion payments
+- Time and materials billing
+- Fixed-price contracts
+
+4.2 Payment Protection
+- All payments are held in escrow until milestone approval.
+- Disputes must be raised within 7 days of milestone completion.
+- Platform mediation available for disputes under $10,000.
+- Legal arbitration pathway for disputes exceeding $10,000.
+
+4.3 Lien Rights
+- Contractors retain right to file mechanic's liens for unpaid work.
+- Platform requires lien waiver submission upon final payment.
+- Sub-contractors must be paid within 7 days of general contractor receiving payment.
+
+---
+
+SECTION 5: QUALITY STANDARDS
+
+5.1 Workmanship Standards
+All work must meet:
+- Local building codes and standards
+- International Building Code (IBC) where applicable
+- Manufacturer specifications for materials
+- Industry best practices (ACI for concrete, AISC for steel)
+
+5.2 Warranty Requirements
+- Minimum 1-year workmanship warranty on all projects
+- Material warranties pass through to the client
+- Structural work carries a 10-year implied warranty under many state laws
+
+5.3 Inspections and Sign-offs
+- Rough-in inspections before concealing work
+- Final inspections before project close-out
+- Client walkthrough and punch list completion
