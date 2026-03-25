@@ -25,6 +25,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 import requests
+import torch
+
+# Limit PyTorch to 1 thread to save memory on free tier deployments
+torch.set_num_threads(1)
 
 # ─────────────────────────────────────────────
 # Logging
@@ -136,7 +140,7 @@ class VectorStore:
 
         logger.info(f"Generating embeddings for {len(chunks)} chunks...")
         texts = [c["text"] for c in chunks]
-        embeddings = self.model.encode(texts, show_progress_bar=True, batch_size=32)
+        embeddings = self.model.encode(texts, show_progress_bar=True, batch_size=8)
         embeddings = np.array(embeddings, dtype=np.float32)
 
         # Normalize for cosine similarity via inner product
