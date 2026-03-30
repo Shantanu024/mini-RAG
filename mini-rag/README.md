@@ -3,7 +3,12 @@
 > A production-ready Retrieval-Augmented Generation (RAG) system for a Construction Marketplace AI Assistant.
 
 ---
+## Live Link :- 
 
+> [website](https://mini-rag-dun.vercel.app/)
+> [backend-url](https://mini-rag-backend-5a90.onrender.com)
+> **Note** : If the server doesn't respond , please hit the backend url once , as I have used the free-tier of render to host my backend server it get's put down to sleep after 15 minutes of no incoming traffic but once you hit it the server restarts . Thank ;) .
+---
 ## 📋 Table of Contents
 
 - [Project Overview](#project-overview)
