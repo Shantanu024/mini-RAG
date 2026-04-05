@@ -20,10 +20,14 @@ from typing import List, Dict, Optional
 import numpy as np
 import faiss
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import requests
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 # Auto-load .env file if present
 try:
@@ -59,9 +63,20 @@ OPENROUTER_FALLBACK_MODELS = [
     "mistralai/mistral-small-3.1-24b-instruct:free",
 ]
 
+ADMIN_SECRET = os.getenv("ADMIN_SECRET", "")
+CORS_ORIGINS = [
+    "https://constructiq.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:5500",
+    "http://localhost:8000",
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:8000",
+]
+
 TOP_K = 5
 CHUNK_SIZE = 512
 CHUNK_OVERLAP = 80
+MAX_RETRIES = 3
 
 
 # ─────────────────────────────────────────────
@@ -78,22 +93,30 @@ class GeminiEmbedder:
         self._base = f"https://generativelanguage.googleapis.com/v1beta/models/{model}"
 
     def embed_query(self, text: str) -> np.ndarray:
-        """Embed a single query text."""
+        """Embed a single query text with retry on rate-limit."""
         if not self.api_key:
             raise RuntimeError("GEMINI_API_KEY not set. Cannot embed queries.")
 
-        resp = requests.post(
-            f"{self._base}:embedContent?key={self.api_key}",
-            json={
-                "model": f"models/{self.model}",
-                "content": {"parts": [{"text": text}]},
-                "taskType": "RETRIEVAL_QUERY",
-            },
-            timeout=15,
-        )
-        resp.raise_for_status()
-        values = resp.json()["embedding"]["values"]
-        return np.array([values], dtype=np.float32)
+        for attempt in range(MAX_RETRIES):
+            resp = requests.post(
+                f"{self._base}:embedContent?key={self.api_key}",
+                json={
+                    "model": f"models/{self.model}",
+                    "content": {"parts": [{"text": text}]},
+                    "taskType": "RETRIEVAL_QUERY",
+                },
+                timeout=15,
+            )
+            if resp.status_code == 429:
+                wait = 2 ** attempt
+                logger.warning(f"Gemini rate-limited (429). Retrying in {wait}s… (attempt {attempt + 1}/{MAX_RETRIES})")
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            values = resp.json()["embedding"]["values"]
+            return np.array([values], dtype=np.float32)
+
+        raise RuntimeError("Gemini API rate limit exceeded after retries. Please try again later.")
 
     def embed_documents(self, texts: List[str]) -> np.ndarray:
         """Embed multiple texts in batches of 100 (Gemini API limit)."""
@@ -113,15 +136,24 @@ class GeminiEmbedder:
                 }
                 for t in batch
             ]
-            resp = requests.post(
-                f"{self._base}:batchEmbedContents?key={self.api_key}",
-                json={"requests": reqs},
-                timeout=60,
-            )
-            resp.raise_for_status()
-            embeddings = [e["values"] for e in resp.json()["embeddings"]]
-            all_embeddings.extend(embeddings)
-            logger.info(f"  Embedded batch {i // batch_size + 1} ({len(batch)} texts)")
+            for attempt in range(MAX_RETRIES):
+                resp = requests.post(
+                    f"{self._base}:batchEmbedContents?key={self.api_key}",
+                    json={"requests": reqs},
+                    timeout=60,
+                )
+                if resp.status_code == 429:
+                    wait = 2 ** attempt
+                    logger.warning(f"Gemini rate-limited (429) on batch. Retrying in {wait}s… (attempt {attempt + 1}/{MAX_RETRIES})")
+                    time.sleep(wait)
+                    continue
+                resp.raise_for_status()
+                embeddings = [e["values"] for e in resp.json()["embeddings"]]
+                all_embeddings.extend(embeddings)
+                logger.info(f"  Embedded batch {i // batch_size + 1} ({len(batch)} texts)")
+                break
+            else:
+                raise RuntimeError(f"Gemini API rate limit exceeded on batch {i // batch_size + 1} after retries.")
 
         return np.array(all_embeddings, dtype=np.float32)
 
@@ -489,17 +521,37 @@ async def lifespan(application: FastAPI):
 app = FastAPI(
     title="Mini RAG API",
     description="Construction Marketplace AI Assistant - RAG Pipeline",
-    version="2.0.0",
+    version="2.1.0",
     lifespan=lifespan,
 )
 
+# ── Rate Limiter ──
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+
+@app.exception_handler(RateLimitExceeded)
+async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return JSONResponse(
+        status_code=429,
+        content={"detail": "Too many requests. Please wait a moment and try again."},
+    )
+
+# ── CORS — restricted to known origins ──
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type", "X-Admin-Secret"],
 )
+
+
+def require_admin(request: Request):
+    """Verify admin secret header for protected endpoints."""
+    if not ADMIN_SECRET:
+        raise HTTPException(status_code=403, detail="Admin secret not configured on server.")
+    if request.headers.get("X-Admin-Secret") != ADMIN_SECRET:
+        raise HTTPException(status_code=403, detail="Forbidden: invalid admin credentials.")
 
 
 class QueryRequest(BaseModel):
@@ -526,8 +578,9 @@ def health():
 
 
 @app.post("/query")
-def query_endpoint(req: QueryRequest):
-    """Main RAG query endpoint."""
+@limiter.limit("10/minute")
+def query_endpoint(request: Request, req: QueryRequest):
+    """Main RAG query endpoint. Rate-limited to 10 req/min per IP."""
     if not req.query.strip():
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
     if len(req.query) > 1000:
@@ -540,7 +593,7 @@ def query_endpoint(req: QueryRequest):
         return result
     except Exception as e:
         logger.error(f"Query error: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+        raise HTTPException(status_code=500, detail="An internal error occurred. Please try again.")
 
 
 @app.get("/stats")
@@ -552,8 +605,10 @@ def stats_endpoint():
 
 
 @app.post("/rebuild-index")
-def rebuild_index(req: RebuildRequest):
-    """Force rebuild of the vector index from documents."""
+@limiter.limit("1/hour")
+def rebuild_index(request: Request, req: RebuildRequest):
+    """Force rebuild of the vector index. Admin-only, rate-limited to 1/hour."""
+    require_admin(request)
     if not req.confirm:
         raise HTTPException(status_code=400, detail="Set confirm=true to rebuild the index.")
     try:
@@ -564,14 +619,17 @@ def rebuild_index(req: RebuildRequest):
         rag.vector_store.save(INDEX_PATH, CHUNKS_PATH)
         rag._initialized = True
         return {"status": "rebuilt", "chunks": len(chunks)}
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Rebuild error: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail="Index rebuild failed. Check server logs.")
 
 
 @app.get("/chunks")
-def list_chunks(source: Optional[str] = None, limit: int = 50):
-    """List indexed chunks (for debugging/transparency)."""
+def list_chunks(request: Request, source: Optional[str] = None, limit: int = 50):
+    """List indexed chunks (admin-only, for debugging)."""
+    require_admin(request)
     if not rag._initialized:
         raise HTTPException(status_code=503, detail="Pipeline not initialized.")
     chunks = rag.vector_store.chunks
