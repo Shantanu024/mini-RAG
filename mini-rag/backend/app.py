@@ -66,6 +66,7 @@ OPENROUTER_FALLBACK_MODELS = [
 ADMIN_SECRET = os.getenv("ADMIN_SECRET", "")
 CORS_ORIGINS = [
     "https://constructiq.vercel.app",
+    "https://mini-rag-dun.vercel.app",
     "http://localhost:3000",
     "http://localhost:5500",
     "http://localhost:8000",
