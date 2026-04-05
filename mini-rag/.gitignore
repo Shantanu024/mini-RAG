@@ -12,10 +12,6 @@ venv/
 # Environment variables
 .env
 
-# Vector store artifacts (auto-generated on first run)
-backend/vector_store/faiss_index.bin
-backend/vector_store/chunks.json
-
 # Evaluation reports
 scripts/evaluation_report.json
 
@@ -28,3 +24,6 @@ scripts/evaluation_report.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Gemini
+.gemini/

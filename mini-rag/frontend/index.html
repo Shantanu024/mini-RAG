@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ConstructIQ AI Assistant — Ask questions about construction policies, safety standards, and technical specifications. Powered by RAG." />
   <title>ConstructIQ — AI Assistant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -425,16 +426,16 @@
 <div id="error-toast"></div>
 
 <script>
-// ── AbortSignal.timeout polyfill for older browsers ──
-if (typeof AbortSignal.timeout !== 'function') {
-  AbortSignal.timeout = function(ms) {
-    const controller = new AbortController();
-    setTimeout(() => controller.abort(new DOMException('TimeoutError', 'TimeoutError')), ms);
-    return controller.signal;
-  };
-}
+// ═══════════════════════════════════════════════════════════
+// DEPLOYMENT CONFIG — Update this URL before deploying to Vercel
+// Set this to your Render backend URL (e.g. "https://your-app.onrender.com")
+const DEPLOYED_API_URL = "https://mini-rag-backend-5a90.onrender.com";
+// ═══════════════════════════════════════════════════════════
 
-const API_BASE = "https://mini-rag-backend-5a90.onrender.com";
+// Auto-detect: use localhost for local dev, deployed URL in production
+const API_BASE = (location.hostname === "" || location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.protocol === "file:")
+  ? "http://localhost:8000"
+  : DEPLOYED_API_URL;
 let isLoading = false;
 
 // ── Auto-resize textarea ──

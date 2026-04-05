@@ -1,10 +1,10 @@
 """
-Mini RAG Pipeline - Backend
+Mini RAG Pipeline - Backend (Deployment-Optimized)
 Construction Marketplace AI Assistant
 
 Architecture:
 - Document loading and chunking
-- Embedding generation (sentence-transformers)
+- Embedding generation (Google Gemini API — lightweight, no local ML)
 - FAISS vector index
 - LLM answer generation (OpenRouter API)
 - FastAPI REST endpoints
@@ -23,12 +23,14 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from sentence_transformers import SentenceTransformer
 import requests
-import torch
 
-# Limit PyTorch to 1 thread to save memory on free tier deployments
-torch.set_num_threads(1)
+# Auto-load .env file if present
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).parent.parent / ".env")
+except ImportError:
+    pass
 
 # ─────────────────────────────────────────────
 # Logging
@@ -45,12 +47,83 @@ logger = logging.getLogger(__name__)
 DOCS_DIR = Path(__file__).parent.parent / "documents"
 INDEX_PATH = Path(__file__).parent / "vector_store" / "faiss_index.bin"
 CHUNKS_PATH = Path(__file__).parent / "vector_store" / "chunks.json"
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"   # Fast, lightweight, great quality
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_EMBED_MODEL = "gemini-embedding-001"
+EMBEDDING_DIM = 3072
+
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
-OPENROUTER_MODEL = "mistralai/mistral-7b-instruct:free"
-TOP_K = 5          # Number of chunks to retrieve
-CHUNK_SIZE = 512   # Characters per chunk
-CHUNK_OVERLAP = 80 # Character overlap between chunks
+OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct:free"
+OPENROUTER_FALLBACK_MODELS = [
+    "google/gemma-3-4b-it:free",
+    "mistralai/mistral-small-3.1-24b-instruct:free",
+]
+
+TOP_K = 5
+CHUNK_SIZE = 512
+CHUNK_OVERLAP = 80
+
+
+# ─────────────────────────────────────────────
+# Gemini Embedder (lightweight — no ML frameworks)
+# ─────────────────────────────────────────────
+class GeminiEmbedder:
+    """Generates embeddings via Google Gemini REST API.
+    No local ML models needed — keeps deployment under 100MB."""
+
+    def __init__(self, api_key: str, model: str = GEMINI_EMBED_MODEL):
+        self.api_key = api_key
+        self.model = model
+        self.dimension = EMBEDDING_DIM
+        self._base = f"https://generativelanguage.googleapis.com/v1beta/models/{model}"
+
+    def embed_query(self, text: str) -> np.ndarray:
+        """Embed a single query text."""
+        if not self.api_key:
+            raise RuntimeError("GEMINI_API_KEY not set. Cannot embed queries.")
+
+        resp = requests.post(
+            f"{self._base}:embedContent?key={self.api_key}",
+            json={
+                "model": f"models/{self.model}",
+                "content": {"parts": [{"text": text}]},
+                "taskType": "RETRIEVAL_QUERY",
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        values = resp.json()["embedding"]["values"]
+        return np.array([values], dtype=np.float32)
+
+    def embed_documents(self, texts: List[str]) -> np.ndarray:
+        """Embed multiple texts in batches of 100 (Gemini API limit)."""
+        if not self.api_key:
+            raise RuntimeError("GEMINI_API_KEY not set. Cannot generate embeddings.")
+
+        all_embeddings = []
+        batch_size = 100
+
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            reqs = [
+                {
+                    "model": f"models/{self.model}",
+                    "content": {"parts": [{"text": t}]},
+                    "taskType": "RETRIEVAL_DOCUMENT",
+                }
+                for t in batch
+            ]
+            resp = requests.post(
+                f"{self._base}:batchEmbedContents?key={self.api_key}",
+                json={"requests": reqs},
+                timeout=60,
+            )
+            resp.raise_for_status()
+            embeddings = [e["values"] for e in resp.json()["embeddings"]]
+            all_embeddings.extend(embeddings)
+            logger.info(f"  Embedded batch {i // batch_size + 1} ({len(batch)} texts)")
+
+        return np.array(all_embeddings, dtype=np.float32)
 
 
 # ─────────────────────────────────────────────
@@ -64,7 +137,7 @@ class DocumentChunker:
     def load_and_chunk(self, docs_dir: Path) -> List[Dict]:
         """Load all .txt files from directory and chunk them."""
         all_chunks = []
-        txt_files = list(docs_dir.glob("*.txt"))
+        txt_files = sorted(docs_dir.glob("*.txt"))
 
         if not txt_files:
             logger.warning(f"No .txt files found in {docs_dir}")
@@ -90,14 +163,11 @@ class DocumentChunker:
         while start < len(text):
             end = min(start + self.chunk_size, len(text))
 
-            # Try to end at a sentence or paragraph boundary
             if end < len(text):
-                # Look for paragraph break first
                 para_break = text.rfind("\n\n", start, end)
                 if para_break > start + self.chunk_size // 2:
                     end = para_break
                 else:
-                    # Fall back to sentence end
                     sent_break = max(
                         text.rfind(". ", start, end),
                         text.rfind(".\n", start, end),
@@ -126,32 +196,27 @@ class DocumentChunker:
 # Vector Store (FAISS)
 # ─────────────────────────────────────────────
 class VectorStore:
-    def __init__(self, embedding_model_name: str = EMBEDDING_MODEL):
-        logger.info(f"Loading embedding model: {embedding_model_name}")
-        self.model = SentenceTransformer(embedding_model_name)
-        self.dimension = self.model.get_sentence_embedding_dimension()
+    def __init__(self):
+        self.embedder = GeminiEmbedder(api_key=GEMINI_API_KEY)
+        self.dimension = EMBEDDING_DIM
         self.index: Optional[faiss.Index] = None
         self.chunks: List[Dict] = []
 
     def build_index(self, chunks: List[Dict]) -> None:
-        """Generate embeddings and build FAISS index."""
+        """Generate embeddings via Gemini API and build FAISS index."""
         if not chunks:
             raise ValueError("No chunks provided to build index.")
 
-        logger.info(f"Generating embeddings for {len(chunks)} chunks...")
+        logger.info(f"Generating embeddings for {len(chunks)} chunks via Gemini API...")
         texts = [c["text"] for c in chunks]
-        embeddings = self.model.encode(texts, show_progress_bar=True, batch_size=8)
-        embeddings = np.array(embeddings, dtype=np.float32)
+        embeddings = self.embedder.embed_documents(texts)
 
-        # Normalize for cosine similarity via inner product
         faiss.normalize_L2(embeddings)
-
-        # Build inner product index (equivalent to cosine similarity after L2 norm)
         self.index = faiss.IndexFlatIP(self.dimension)
         self.index.add(embeddings)
         self.chunks = chunks
 
-        logger.info(f"FAISS index built with {self.index.ntotal} vectors (dim={self.dimension})")
+        logger.info(f"FAISS index built: {self.index.ntotal} vectors (dim={self.dimension})")
 
     def save(self, index_path: Path, chunks_path: Path) -> None:
         """Persist index and chunks to disk."""
@@ -159,14 +224,25 @@ class VectorStore:
         faiss.write_index(self.index, str(index_path))
         with open(chunks_path, "w", encoding="utf-8") as f:
             json.dump(self.chunks, f, indent=2, ensure_ascii=False)
-        logger.info(f"Saved index to {index_path}")
-        logger.info(f"Saved chunks to {chunks_path}")
+        logger.info(f"Saved index → {index_path}")
+        logger.info(f"Saved chunks → {chunks_path}")
 
     def load(self, index_path: Path, chunks_path: Path) -> bool:
-        """Load pre-built index from disk."""
+        """Load pre-built index from disk with dimension safety check."""
         if not index_path.exists() or not chunks_path.exists():
             return False
-        self.index = faiss.read_index(str(index_path))
+
+        loaded_index = faiss.read_index(str(index_path))
+
+        # Safety: reject index built with a different embedding model
+        if loaded_index.d != self.dimension:
+            logger.warning(
+                f"Index dimension mismatch: file has {loaded_index.d}, "
+                f"expected {self.dimension}. Rebuild required."
+            )
+            return False
+
+        self.index = loaded_index
         with open(chunks_path, "r", encoding="utf-8") as f:
             self.chunks = json.load(f)
         logger.info(f"Loaded index: {self.index.ntotal} vectors, {len(self.chunks)} chunks")
@@ -177,8 +253,7 @@ class VectorStore:
         if self.index is None:
             raise RuntimeError("Index not built or loaded.")
 
-        query_embedding = self.model.encode([query], show_progress_bar=False)
-        query_embedding = np.array(query_embedding, dtype=np.float32)
+        query_embedding = self.embedder.embed_query(query)
         faiss.normalize_L2(query_embedding)
 
         scores, indices = self.index.search(query_embedding, top_k)
@@ -228,44 +303,61 @@ Please answer the question strictly based on the context above."""
         if not self.api_key:
             return self._fallback_response(query, context_chunks)
 
-        try:
-            start_time = time.time()
-            response = requests.post(
-                self.base_url,
-                headers={
-                    "Authorization": f"Bearer {self.api_key}",
-                    "Content-Type": "application/json",
-                    "HTTP-Referer": "http://localhost:3000",
-                    "X-Title": "Mini RAG - Construction Marketplace",
-                },
-                json={
-                    "model": self.model,
-                    "messages": [
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": user_prompt},
-                    ],
-                    "temperature": 0.1,
-                    "max_tokens": 800,
-                },
-                timeout=30,
-            )
-            latency = time.time() - start_time
-            response.raise_for_status()
-            data = response.json()
-            answer = data["choices"][0]["message"]["content"].strip()
+        models_to_try = [self.model] + OPENROUTER_FALLBACK_MODELS
+        last_error = ""
 
-            return {
-                "answer": answer,
-                "model": self.model,
-                "latency_seconds": round(latency, 2),
-                "token_usage": data.get("usage", {}),
-            }
-        except requests.exceptions.Timeout:
-            logger.error("LLM request timed out")
-            return self._fallback_response(query, context_chunks, error="Request timed out. Using context summary.")
-        except Exception as e:
-            logger.error(f"LLM error: {e}")
-            return self._fallback_response(query, context_chunks, error=str(e))
+        for model_id in models_to_try:
+            try:
+                start_time = time.time()
+                response = requests.post(
+                    self.base_url,
+                    headers={
+                        "Authorization": f"Bearer {self.api_key}",
+                        "Content-Type": "application/json",
+                        "HTTP-Referer": "https://constructiq.vercel.app",
+                        "X-Title": "ConstructIQ - Construction Marketplace",
+                    },
+                    json={
+                        "model": model_id,
+                        "messages": [
+                            {"role": "system", "content": system_prompt},
+                            {"role": "user", "content": user_prompt},
+                        ],
+                        "temperature": 0.1,
+                        "max_tokens": 800,
+                    },
+                    timeout=30,
+                )
+                latency = time.time() - start_time
+
+                if response.status_code == 404:
+                    logger.warning(f"Model {model_id} returned 404, trying next...")
+                    last_error = f"Model {model_id} unavailable (404)"
+                    continue
+
+                response.raise_for_status()
+                data = response.json()
+                answer = data["choices"][0]["message"]["content"].strip()
+
+                if model_id != self.model:
+                    logger.info(f"Used fallback model: {model_id}")
+
+                return {
+                    "answer": answer,
+                    "model": model_id,
+                    "latency_seconds": round(latency, 2),
+                    "token_usage": data.get("usage", {}),
+                }
+            except requests.exceptions.Timeout:
+                logger.error(f"LLM request timed out for model {model_id}")
+                last_error = "Request timed out."
+                continue
+            except Exception as e:
+                logger.error(f"LLM error with model {model_id}: {e}")
+                last_error = str(e)
+                continue
+
+        return self._fallback_response(query, context_chunks, error=last_error)
 
     def _format_context(self, chunks: List[Dict]) -> str:
         parts = []
@@ -284,7 +376,7 @@ Please answer the question strictly based on the context above."""
         elif not self.api_key:
             notice = "\n\n⚠️ Note: No OPENROUTER_API_KEY set. Showing raw retrieved context. Set API key for AI-generated answers."
 
-        top_chunk = chunks[0]["text"] if chunks else "No relevant information found."
+        top_chunk = chunks[0]["text"] if len(chunks) > 0 else "No relevant information found."
         answer = f"Based on the documents, here is the most relevant information regarding your query:\n\n{top_chunk}{notice}"
         return {
             "answer": answer,
@@ -308,7 +400,14 @@ class RAGPipeline:
         """Load or build the vector index."""
         if self.vector_store.load(INDEX_PATH, CHUNKS_PATH):
             logger.info("✅ Loaded existing vector index.")
+            self._initialized = True
         else:
+            if not GEMINI_API_KEY:
+                logger.error(
+                    "⚠️ No pre-built index found (or dimension mismatch) and GEMINI_API_KEY is not set. "
+                    "Cannot build index. Set GEMINI_API_KEY and call POST /rebuild-index."
+                )
+                return
             logger.info("Building new vector index from documents...")
             chunks = self.chunker.load_and_chunk(DOCS_DIR)
             if not chunks:
@@ -316,14 +415,13 @@ class RAGPipeline:
             self.vector_store.build_index(chunks)
             self.vector_store.save(INDEX_PATH, CHUNKS_PATH)
             logger.info("✅ Index built and saved.")
-        self._initialized = True
+            self._initialized = True
 
     def query(self, user_query: str, top_k: int = TOP_K) -> Dict:
         """Full RAG pipeline: retrieve + generate."""
         if not self._initialized:
             self.initialize()
 
-        # Step 1: Retrieve relevant chunks
         t0 = time.time()
         retrieved_chunks = self.vector_store.search(user_query, top_k)
         retrieval_time = time.time() - t0
@@ -339,7 +437,6 @@ class RAGPipeline:
                 "total_time_seconds": round(retrieval_time, 3),
             }
 
-        # Step 2: Generate answer
         t1 = time.time()
         llm_result = self.llm.generate(user_query, retrieved_chunks)
         generation_time = time.time() - t1
@@ -360,7 +457,8 @@ class RAGPipeline:
         return {
             "total_chunks": len(self.vector_store.chunks),
             "index_size": self.vector_store.index.ntotal if self.vector_store.index else 0,
-            "embedding_model": EMBEDDING_MODEL,
+            "embedding_model": f"Gemini {GEMINI_EMBED_MODEL}",
+            "embedding_dim": EMBEDDING_DIM,
             "llm_model": OPENROUTER_MODEL,
             "documents": list(set(c["source"] for c in self.vector_store.chunks)),
         }
@@ -374,10 +472,16 @@ rag = RAGPipeline()
 
 @asynccontextmanager
 async def lifespan(application: FastAPI):
-    """Modern lifespan handler (replaces deprecated on_event)."""
+    """Modern lifespan handler."""
     logger.info("🚀 Starting Mini RAG API...")
-    rag.initialize()
-    logger.info("✅ RAG pipeline ready.")
+    try:
+        rag.initialize()
+        if rag._initialized:
+            logger.info("✅ RAG pipeline ready.")
+        else:
+            logger.warning("⚠️ RAG pipeline started WITHOUT index. Set GEMINI_API_KEY and POST /rebuild-index.")
+    except Exception as e:
+        logger.error(f"⚠️ Initialization failed: {e}. Server running but queries will fail.")
     yield
     logger.info("🛑 Shutting down Mini RAG API.")
 
@@ -385,7 +489,7 @@ async def lifespan(application: FastAPI):
 app = FastAPI(
     title="Mini RAG API",
     description="Construction Marketplace AI Assistant - RAG Pipeline",
-    version="1.0.0",
+    version="2.0.0",
     lifespan=lifespan,
 )
 
@@ -482,4 +586,5 @@ def list_chunks(source: Optional[str] = None, limit: int = 50):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True)

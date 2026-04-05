@@ -1,0 +1,2338 @@
+[
+  {
+    "id": "construction_policies.txt_0",
+    "text": "CONSTRUCTION MARKETPLACE - POLICIES AND GUIDELINES\n\nDocument: Project Management Policies\nVersion: 2.1\nLast Updated: January 2024\n\n---\n\nSECTION 1: PROJECT INITIATION\n\n1.1 Contractor Onboarding Requirements\nAll contractors must complete a verification process before listing services on the platform.",
+    "source": "construction_policies.txt",
+    "chunk_index": 0,
+    "char_start": 0,
+    "char_end": 299
+  },
+  {
+    "id": "construction_policies.txt_1",
+    "text": "rs must complete a verification process before listing services on the platform. This includes:\n- Valid contractor license (state-issued)\n- Proof of general liability insurance (minimum $1,000,000 per occurrence)\n- Workers' compensation insurance for employees\n- Background check completion within the last 2 years\n- Minimum 3 verifiable references from prior projects",
+    "source": "construction_policies.txt",
+    "chunk_index": 1,
+    "char_start": 219,
+    "char_end": 587
+  },
+  {
+    "id": "construction_policies.txt_2",
+    "text": "on within the last 2 years\n- Minimum 3 verifiable references from prior projects\n\n1.2 Project Listing Standards\nProjects must include:\n- Detailed scope of work description\n- Estimated timeline with milestones\n- Budget range with line-item breakdown\n- Required permits and regulatory approvals\n- Material specifications\n\n---\n\nSECTION 2: CONSTRUCTION PROJECT DELAYS",
+    "source": "construction_policies.txt",
+    "chunk_index": 2,
+    "char_start": 507,
+    "char_end": 870
+  },
+  {
+    "id": "construction_policies.txt_3",
+    "text": "approvals\n- Material specifications\n\n---\n\nSECTION 2: CONSTRUCTION PROJECT DELAYS\n\n2.1 Common Causes of Project Delays\nConstruction project delays are one of the most significant challenges in the industry. The following factors are known to contribute to delays:",
+    "source": "construction_policies.txt",
+    "chunk_index": 3,
+    "char_start": 790,
+    "char_end": 1052
+  },
+  {
+    "id": "construction_policies.txt_4",
+    "text": "lenges in the industry. The following factors are known to contribute to delays:\n\nWeather-Related Delays:\n- Extreme weather conditions such as heavy rainfall, flooding, snow, or extreme heat can halt construction activities.\n- Seasonal weather patterns must be factored into project scheduling.\n- Force majeure clauses protect contractors from penalties during natural disasters.",
+    "source": "construction_policies.txt",
+    "chunk_index": 4,
+    "char_start": 972,
+    "char_end": 1351
+  },
+  {
+    "id": "construction_policies.txt_5",
+    "text": "rce majeure clauses protect contractors from penalties during natural disasters.\n\nSupply Chain Issues:\n- Shortage of construction materials (lumber, steel, concrete) can pause work.\n- Global supply chain disruptions impact lead times for specialized equipment.\n- Material price volatility can cause budget overruns leading to work stoppages.",
+    "source": "construction_policies.txt",
+    "chunk_index": 5,
+    "char_start": 1271,
+    "char_end": 1612
+  },
+  {
+    "id": "construction_policies.txt_6",
+    "text": "- Material price volatility can cause budget overruns leading to work stoppages.\n\nLabor Shortages:\n- Skilled labor shortages in trades such as electricians, plumbers, and welders.\n- High turnover rates among construction workers.\n- Seasonal labor availability fluctuations.\n\nDesign and Planning Issues:\n- Incomplete or unclear architectural/engineering drawings.\n- Last-minute design changes requested by clients.\n- Conflicts between structural, MEP (Mechanical, Electrical, Plumbing) designs.",
+    "source": "construction_policies.txt",
+    "chunk_index": 6,
+    "char_start": 1532,
+    "char_end": 2025
+  },
+  {
+    "id": "construction_policies.txt_7",
+    "text": "- Conflicts between structural, MEP (Mechanical, Electrical, Plumbing) designs.\n\nPermit and Regulatory Delays:\n- Slow permit approval processes from municipal authorities.\n- Unexpected code compliance issues discovered during inspections.\n- Environmental compliance requirements and surveys.\n\nSite Conditions:\n- Unforeseen underground utilities or archaeological findings.\n- Poor soil conditions requiring additional foundation work.\n- Contaminated soil requiring remediation before construction.",
+    "source": "construction_policies.txt",
+    "chunk_index": 7,
+    "char_start": 1945,
+    "char_end": 2442
+  },
+  {
+    "id": "construction_policies.txt_8",
+    "text": "foundation work.\n- Contaminated soil requiring remediation before construction.\n\n2.2 Delay Mitigation Strategies\n- Conduct thorough pre-construction site assessments.\n- Build buffer time (10-15%) into project schedules.\n- Establish backup suppliers for critical materials.\n- Maintain clear communication protocols between all parties.\n- Use project management software to track milestones.",
+    "source": "construction_policies.txt",
+    "chunk_index": 8,
+    "char_start": 2362,
+    "char_end": 2752
+  },
+  {
+    "id": "construction_policies.txt_9",
+    "text": "cols between all parties.\n- Use project management software to track milestones.\n\n2.3 Delay Penalty Clauses\nStandard contracts on this platform include:\n- Liquidated damages of $500-$2,000 per day for contractor-caused delays.\n- No penalty for documented force majeure events.\n- Client-caused delays entitle the contractor to time extensions and cost recovery.\n\n---\n\nSECTION 3: SAFETY STANDARDS",
+    "source": "construction_policies.txt",
+    "chunk_index": 9,
+    "char_start": 2672,
+    "char_end": 3066
+  },
+  {
+    "id": "construction_policies.txt_10",
+    "text": "ntractor to time extensions and cost recovery.\n\n---\n\nSECTION 3: SAFETY STANDARDS\n\n3.1 Mandatory Safety Requirements\nAll construction projects must comply with OSHA standards. Key requirements include:\n- Personal Protective Equipment (PPE): Hard hats, safety vests, steel-toed boots are mandatory on all sites.\n- Fall Protection: Required for work at heights above 6 feet.\n- Scaffolding: Must be inspected daily and certified by a competent person.",
+    "source": "construction_policies.txt",
+    "chunk_index": 10,
+    "char_start": 2986,
+    "char_end": 3433
+  },
+  {
+    "id": "construction_policies.txt_11",
+    "text": "eet.\n- Scaffolding: Must be inspected daily and certified by a competent person.\n- Electrical Safety: Lockout/Tagout (LOTO) procedures must be followed.\n- Hazard Communication: All chemical hazards must be labeled and SDS (Safety Data Sheets) available.\n\n3.2 Incident Reporting\n- All injuries must be reported within 24 hours.\n- OSHA recordable incidents require documentation and investigation.\n- Near-miss events must be reported and reviewed.",
+    "source": "construction_policies.txt",
+    "chunk_index": 11,
+    "char_start": 3353,
+    "char_end": 3798
+  },
+  {
+    "id": "construction_policies.txt_12",
+    "text": "cumentation and investigation.\n- Near-miss events must be reported and reviewed.\n\n3.3 Site Safety Inspections\n- Weekly safety inspections are required.\n- Third-party safety audits for projects exceeding $1 million.\n\n---\n\nSECTION 4: PAYMENT TERMS AND DISPUTES\n\n4.1 Standard Payment Structure\nThe platform supports the following payment structures:\n- Milestone-based payments (recommended for projects over $50,000)\n- Percentage of completion payments\n- Time and materials billing\n- Fixed-price contracts",
+    "source": "construction_policies.txt",
+    "chunk_index": 12,
+    "char_start": 3718,
+    "char_end": 4220
+  },
+  {
+    "id": "construction_policies.txt_13",
+    "text": "tage of completion payments\n- Time and materials billing\n- Fixed-price contracts\n\n4.2 Payment Protection\n- All payments are held in escrow until milestone approval.\n- Disputes must be raised within 7 days of milestone completion.\n- Platform mediation available for disputes under $10,000.\n- Legal arbitration pathway for disputes exceeding $10,000.",
+    "source": "construction_policies.txt",
+    "chunk_index": 13,
+    "char_start": 4140,
+    "char_end": 4488
+  },
+  {
+    "id": "construction_policies.txt_14",
+    "text": "putes under $10,000.\n- Legal arbitration pathway for disputes exceeding $10,000.\n\n4.3 Lien Rights\n- Contractors retain right to file mechanic's liens for unpaid work.\n- Platform requires lien waiver submission upon final payment.\n- Sub-contractors must be paid within 7 days of general contractor receiving payment.\n\n---\n\nSECTION 5: QUALITY STANDARDS",
+    "source": "construction_policies.txt",
+    "chunk_index": 14,
+    "char_start": 4408,
+    "char_end": 4758
+  },
+  {
+    "id": "construction_policies.txt_15",
+    "text": "days of general contractor receiving payment.\n\n---\n\nSECTION 5: QUALITY STANDARDS\n\n5.1 Workmanship Standards\nAll work must meet:\n- Local building codes and standards\n- International Building Code (IBC) where applicable\n- Manufacturer specifications for materials\n- Industry best practices (ACI for concrete, AISC for steel)",
+    "source": "construction_policies.txt",
+    "chunk_index": 15,
+    "char_start": 4678,
+    "char_end": 5000
+  },
+  {
+    "id": "construction_policies.txt_16",
+    "text": "tions for materials\n- Industry best practices (ACI for concrete, AISC for steel)\n\n5.2 Warranty Requirements\n- Minimum 1-year workmanship warranty on all projects\n- Material warranties pass through to the client\n- Structural work carries a 10-year implied warranty under many state laws\n\n5.3 Inspections and Sign-offs\n- Rough-in inspections before concealing work\n- Final inspections before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 16,
+    "char_start": 4920,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_17",
+    "text": "pections before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 17,
+    "char_start": 5294,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_18",
+    "text": "ections before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 18,
+    "char_start": 5295,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_19",
+    "text": "ctions before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 19,
+    "char_start": 5296,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_20",
+    "text": "tions before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 20,
+    "char_start": 5297,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_21",
+    "text": "ions before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 21,
+    "char_start": 5298,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_22",
+    "text": "ons before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 22,
+    "char_start": 5299,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_23",
+    "text": "ns before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 23,
+    "char_start": 5300,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_24",
+    "text": "s before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 24,
+    "char_start": 5301,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_25",
+    "text": "before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 25,
+    "char_start": 5302,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_26",
+    "text": "before project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 26,
+    "char_start": 5303,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_27",
+    "text": "efore project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 27,
+    "char_start": 5304,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_28",
+    "text": "fore project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 28,
+    "char_start": 5305,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_29",
+    "text": "ore project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 29,
+    "char_start": 5306,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_30",
+    "text": "re project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 30,
+    "char_start": 5307,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_31",
+    "text": "e project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 31,
+    "char_start": 5308,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_32",
+    "text": "project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 32,
+    "char_start": 5309,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_33",
+    "text": "project close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 33,
+    "char_start": 5310,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_34",
+    "text": "roject close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 34,
+    "char_start": 5311,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_35",
+    "text": "oject close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 35,
+    "char_start": 5312,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_36",
+    "text": "ject close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 36,
+    "char_start": 5313,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_37",
+    "text": "ect close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 37,
+    "char_start": 5314,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_38",
+    "text": "ct close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 38,
+    "char_start": 5315,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_39",
+    "text": "t close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 39,
+    "char_start": 5316,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_40",
+    "text": "close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 40,
+    "char_start": 5317,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_41",
+    "text": "close-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 41,
+    "char_start": 5318,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_42",
+    "text": "lose-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 42,
+    "char_start": 5319,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_43",
+    "text": "ose-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 43,
+    "char_start": 5320,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_44",
+    "text": "se-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 44,
+    "char_start": 5321,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_45",
+    "text": "e-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 45,
+    "char_start": 5322,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_46",
+    "text": "-out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 46,
+    "char_start": 5323,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_47",
+    "text": "out\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 47,
+    "char_start": 5324,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_48",
+    "text": "ut\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 48,
+    "char_start": 5325,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_49",
+    "text": "t\n- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 49,
+    "char_start": 5326,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_50",
+    "text": "- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 50,
+    "char_start": 5327,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_51",
+    "text": "- Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 51,
+    "char_start": 5328,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_52",
+    "text": "Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 52,
+    "char_start": 5329,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_53",
+    "text": "Client walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 53,
+    "char_start": 5330,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_54",
+    "text": "lient walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 54,
+    "char_start": 5331,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_55",
+    "text": "ient walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 55,
+    "char_start": 5332,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_56",
+    "text": "ent walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 56,
+    "char_start": 5333,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_57",
+    "text": "nt walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 57,
+    "char_start": 5334,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_58",
+    "text": "t walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 58,
+    "char_start": 5335,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_59",
+    "text": "walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 59,
+    "char_start": 5336,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_60",
+    "text": "walkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 60,
+    "char_start": 5337,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_61",
+    "text": "alkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 61,
+    "char_start": 5338,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_62",
+    "text": "lkthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 62,
+    "char_start": 5339,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_63",
+    "text": "kthrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 63,
+    "char_start": 5340,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_64",
+    "text": "through and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 64,
+    "char_start": 5341,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_65",
+    "text": "hrough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 65,
+    "char_start": 5342,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_66",
+    "text": "rough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 66,
+    "char_start": 5343,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_67",
+    "text": "ough and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 67,
+    "char_start": 5344,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_68",
+    "text": "ugh and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 68,
+    "char_start": 5345,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_69",
+    "text": "gh and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 69,
+    "char_start": 5346,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_70",
+    "text": "h and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 70,
+    "char_start": 5347,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_71",
+    "text": "and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 71,
+    "char_start": 5348,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_72",
+    "text": "and punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 72,
+    "char_start": 5349,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_73",
+    "text": "nd punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 73,
+    "char_start": 5350,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_74",
+    "text": "d punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 74,
+    "char_start": 5351,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_75",
+    "text": "punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 75,
+    "char_start": 5352,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_76",
+    "text": "punch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 76,
+    "char_start": 5353,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_77",
+    "text": "unch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 77,
+    "char_start": 5354,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_78",
+    "text": "nch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 78,
+    "char_start": 5355,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_79",
+    "text": "ch list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 79,
+    "char_start": 5356,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_80",
+    "text": "h list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 80,
+    "char_start": 5357,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_81",
+    "text": "list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 81,
+    "char_start": 5358,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_82",
+    "text": "list completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 82,
+    "char_start": 5359,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_83",
+    "text": "ist completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 83,
+    "char_start": 5360,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_84",
+    "text": "st completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 84,
+    "char_start": 5361,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_85",
+    "text": "t completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 85,
+    "char_start": 5362,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_86",
+    "text": "completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 86,
+    "char_start": 5363,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_87",
+    "text": "completion",
+    "source": "construction_policies.txt",
+    "chunk_index": 87,
+    "char_start": 5364,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_88",
+    "text": "ompletion",
+    "source": "construction_policies.txt",
+    "chunk_index": 88,
+    "char_start": 5365,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_89",
+    "text": "mpletion",
+    "source": "construction_policies.txt",
+    "chunk_index": 89,
+    "char_start": 5366,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_90",
+    "text": "pletion",
+    "source": "construction_policies.txt",
+    "chunk_index": 90,
+    "char_start": 5367,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_91",
+    "text": "letion",
+    "source": "construction_policies.txt",
+    "chunk_index": 91,
+    "char_start": 5368,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_92",
+    "text": "etion",
+    "source": "construction_policies.txt",
+    "chunk_index": 92,
+    "char_start": 5369,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_93",
+    "text": "tion",
+    "source": "construction_policies.txt",
+    "chunk_index": 93,
+    "char_start": 5370,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_94",
+    "text": "ion",
+    "source": "construction_policies.txt",
+    "chunk_index": 94,
+    "char_start": 5371,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_95",
+    "text": "on",
+    "source": "construction_policies.txt",
+    "chunk_index": 95,
+    "char_start": 5372,
+    "char_end": 5374
+  },
+  {
+    "id": "construction_policies.txt_96",
+    "text": "n",
+    "source": "construction_policies.txt",
+    "chunk_index": 96,
+    "char_start": 5373,
+    "char_end": 5374
+  },
+  {
+    "id": "platform_faq.txt_0",
+    "text": "CONSTRUCTION MARKETPLACE - FREQUENTLY ASKED QUESTIONS (FAQ)\n\nDocument: Platform FAQ\nVersion: 3.0\nLast Updated: February 2024\n\n---\n\nQ1: How do I get started as a contractor on this platform?\nA: To register as a contractor, follow these steps:\n1. Create an account and complete your business profile.\n2. Upload your contractor license, insurance certificates, and any relevant certifications.\n3. Complete the identity verification process.\n4. Submit three professional references.\n5.",
+    "source": "platform_faq.txt",
+    "chunk_index": 0,
+    "char_start": 0,
+    "char_end": 481
+  },
+  {
+    "id": "platform_faq.txt_1",
+    "text": "e the identity verification process.\n4. Submit three professional references.\n5. Once approved (typically 3-5 business days), you can start bidding on projects.\n\nQ2: What types of construction projects are supported on the platform?\nA: The platform supports a wide range of construction projects including:\n- Residential construction (new homes, additions, renovations)\n- Commercial construction (offices, retail spaces, warehouses)\n- Industrial construction (factories, plants, infrastructure)\n- Specialty work",
+    "source": "platform_faq.txt",
+    "chunk_index": 1,
+    "char_start": 401,
+    "char_end": 913
+  },
+  {
+    "id": "platform_faq.txt_2",
+    "text": "- Industrial construction (factories, plants, infrastructure)\n- Specialty work (electrical, plumbing, HVAC, roofing)\n- Civil construction (roads, bridges, utilities)\n\nQ3: How are contractor bids evaluated?\nA: Bids are evaluated based on multiple criteria:\n- Price competitiveness (40% weight)\n- Contractor rating and reviews (30% weight)\n- Relevant experience and past projects (20% weight)\n- Timeline commitment (10% weight)\nProject owners can adjust these criteria based on project priorities.",
+    "source": "platform_faq.txt",
+    "chunk_index": 2,
+    "char_start": 833,
+    "char_end": 1329
+  },
+  {
+    "id": "platform_faq.txt_3",
+    "text": "0% weight)\nProject owners can adjust these criteria based on project priorities.\n\nQ4: What happens if a contractor abandons a project?\nA: If a contractor abandons a project:\n- The remaining escrowed funds are released to the project owner.\n- The contractor's rating is severely penalized.\n- The platform may suspend or permanently ban repeat offenders.\n- The project owner may seek damages through the platform's dispute resolution system.\n- A substitute contractor listing is expedited.",
+    "source": "platform_faq.txt",
+    "chunk_index": 3,
+    "char_start": 1249,
+    "char_end": 1736
+  },
+  {
+    "id": "platform_faq.txt_4",
+    "text": "orm's dispute resolution system.\n- A substitute contractor listing is expedited.\n\nQ5: How does the platform handle material procurement?\nA: The platform offers two options:\n- Owner-furnished materials: The project owner purchases materials directly.\n- Contractor-furnished materials: The contractor procures materials, included in the contract price.\nFor contractor-furnished materials, receipts and invoices must be submitted for transparency.",
+    "source": "platform_faq.txt",
+    "chunk_index": 4,
+    "char_start": 1656,
+    "char_end": 2100
+  },
+  {
+    "id": "platform_faq.txt_5",
+    "text": "r-furnished materials, receipts and invoices must be submitted for transparency.\n\nQ6: What are the platform fees?\nA: Platform fees are structured as follows:\n- Project owners: Free to post projects; 2.5% transaction fee on payments processed.\n- Contractors: 5% service fee on earned project revenue.\n- Premium subscriptions available for enhanced visibility and features.",
+    "source": "platform_faq.txt",
+    "chunk_index": 5,
+    "char_start": 2020,
+    "char_end": 2391
+  },
+  {
+    "id": "platform_faq.txt_6",
+    "text": "revenue.\n- Premium subscriptions available for enhanced visibility and features.\n\nQ7: How is project quality assured?\nA: Quality assurance mechanisms include:\n- Mandatory milestone inspections before payment release.\n- Client review and rating system post-project completion.\n- Third-party inspection services available for large projects.\n- Dispute resolution team for quality complaints.",
+    "source": "platform_faq.txt",
+    "chunk_index": 6,
+    "char_start": 2311,
+    "char_end": 2700
+  },
+  {
+    "id": "platform_faq.txt_7",
+    "text": "available for large projects.\n- Dispute resolution team for quality complaints.\n\nQ8: What insurance is required for projects?\nA: Insurance requirements vary by project size:\n- Projects under $50,000: General liability insurance ($500,000 minimum).\n- Projects $50,000 - $500,000: General liability ($1,000,000) + workers' comp.\n- Projects over $500,000: General liability ($2,000,000) + workers' comp + builder's risk insurance.",
+    "source": "platform_faq.txt",
+    "chunk_index": 7,
+    "char_start": 2620,
+    "char_end": 3048
+  },
+  {
+    "id": "platform_faq.txt_8",
+    "text": ",000: General liability ($2,000,000) + workers' comp + builder's risk insurance.\n- Specialty projects may require additional coverage (e.g., professional liability).\n\nQ9: How are construction delays handled on the platform?\nA: The platform has a structured delay management process:\n- Contractors must report anticipated delays 48 hours in advance.\n- Delay reasons are classified as contractor-caused, client-caused, or force majeure.",
+    "source": "platform_faq.txt",
+    "chunk_index": 8,
+    "char_start": 2968,
+    "char_end": 3402
+  },
+  {
+    "id": "platform_faq.txt_9",
+    "text": "ay reasons are classified as contractor-caused, client-caused, or force majeure.\n- Contractor-caused delays may trigger liquidated damages per contract terms.\n- Clients can approve timeline extensions through the platform dashboard.\n- All delay communications must be documented in the platform's messaging system.",
+    "source": "platform_faq.txt",
+    "chunk_index": 9,
+    "char_start": 3322,
+    "char_end": 3636
+  },
+  {
+    "id": "platform_faq.txt_10",
+    "text": "All delay communications must be documented in the platform's messaging system.\n\nQ10: Can subcontractors be used on projects?\nA: Yes, with conditions:\n- Primary contractors may subcontract up to 40% of the work value.\n- All subcontractors must also be verified on the platform.\n- Primary contractor remains fully responsible for subcontractor work quality.\n- Subcontractors must be disclosed to the project owner before engagement.",
+    "source": "platform_faq.txt",
+    "chunk_index": 10,
+    "char_start": 3556,
+    "char_end": 3988
+  },
+  {
+    "id": "platform_faq.txt_11",
+    "text": "lity.\n- Subcontractors must be disclosed to the project owner before engagement.\n\nQ11: What is the process for project change orders?\nA: Change orders follow a formal process:\n1. Contractor identifies scope change and prepares change order request.\n2. Change order includes description, cost impact, and timeline impact.\n3. Client reviews and approves/rejects through the platform.\n4. Approved change orders become addendums to the original contract.\n5.",
+    "source": "platform_faq.txt",
+    "chunk_index": 11,
+    "char_start": 3908,
+    "char_end": 4361
+  },
+  {
+    "id": "platform_faq.txt_12",
+    "text": "latform.\n4. Approved change orders become addendums to the original contract.\n5. Payment for change orders follows the same escrow and milestone process.\n\nQ12: How does the rating and review system work?\nA: Both project owners and contractors receive ratings:\n- Ratings are on a 1-5 star scale.\n- Reviews are posted after project completion.\n- Reviews are verified (only parties involved in the project can review).\n- Dispute resolution team reviews complaints of fraudulent reviews.",
+    "source": "platform_faq.txt",
+    "chunk_index": 12,
+    "char_start": 4281,
+    "char_end": 4764
+  },
+  {
+    "id": "platform_faq.txt_13",
+    "text": "can review).\n- Dispute resolution team reviews complaints of fraudulent reviews.\n- Consistently low-rated contractors (below 3.0) face account review.\n\nQ13: What environmental regulations must contractors comply with?\nA: Contractors must comply with applicable environmental regulations:\n- Clean Water Act requirements for stormwater management.\n- Clean Air Act compliance for dust and emission controls.\n- Hazardous waste disposal per EPA regulations.\n- Local environmental impact requirements.",
+    "source": "platform_faq.txt",
+    "chunk_index": 13,
+    "char_start": 4684,
+    "char_end": 5179
+  },
+  {
+    "id": "platform_faq.txt_14",
+    "text": "s waste disposal per EPA regulations.\n- Local environmental impact requirements.\n- LEED certification requirements if specified in the project.\n\nQ14: How is worker safety enforced on projects?\nA: Worker safety is enforced through:\n- Mandatory OSHA compliance certification for all contractors.\n- Safety plans required for projects over $100,000.\n- Random safety audits by platform-certified inspectors.\n- Incident reporting integrated into the platform.",
+    "source": "platform_faq.txt",
+    "chunk_index": 14,
+    "char_start": 5099,
+    "char_end": 5552
+  },
+  {
+    "id": "platform_faq.txt_15",
+    "text": "latform-certified inspectors.\n- Incident reporting integrated into the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 15,
+    "char_start": 5472,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_16",
+    "text": "nto the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 16,
+    "char_start": 5535,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_17",
+    "text": "to the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 17,
+    "char_start": 5536,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_18",
+    "text": "o the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 18,
+    "char_start": 5537,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_19",
+    "text": "the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 19,
+    "char_start": 5538,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_20",
+    "text": "the platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 20,
+    "char_start": 5539,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_21",
+    "text": "he platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 21,
+    "char_start": 5540,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_22",
+    "text": "e platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 22,
+    "char_start": 5541,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_23",
+    "text": "platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 23,
+    "char_start": 5542,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_24",
+    "text": "platform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 24,
+    "char_start": 5543,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_25",
+    "text": "latform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 25,
+    "char_start": 5544,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_26",
+    "text": "atform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 26,
+    "char_start": 5545,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_27",
+    "text": "tform.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 27,
+    "char_start": 5546,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_28",
+    "text": "form.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 28,
+    "char_start": 5547,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_29",
+    "text": "orm.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 29,
+    "char_start": 5548,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_30",
+    "text": "rm.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 30,
+    "char_start": 5549,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_31",
+    "text": "m.\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 31,
+    "char_start": 5550,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_32",
+    "text": ".\n- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 32,
+    "char_start": 5551,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_33",
+    "text": "- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 33,
+    "char_start": 5552,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_34",
+    "text": "- Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 34,
+    "char_start": 5553,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_35",
+    "text": "Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 35,
+    "char_start": 5554,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_36",
+    "text": "Contractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 36,
+    "char_start": 5555,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_37",
+    "text": "ontractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 37,
+    "char_start": 5556,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_38",
+    "text": "ntractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 38,
+    "char_start": 5557,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_39",
+    "text": "tractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 39,
+    "char_start": 5558,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_40",
+    "text": "ractors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 40,
+    "char_start": 5559,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_41",
+    "text": "actors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 41,
+    "char_start": 5560,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_42",
+    "text": "ctors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 42,
+    "char_start": 5561,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_43",
+    "text": "tors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 43,
+    "char_start": 5562,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_44",
+    "text": "ors with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 44,
+    "char_start": 5563,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_45",
+    "text": "rs with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 45,
+    "char_start": 5564,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_46",
+    "text": "s with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 46,
+    "char_start": 5565,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_47",
+    "text": "with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 47,
+    "char_start": 5566,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_48",
+    "text": "with poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 48,
+    "char_start": 5567,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_49",
+    "text": "ith poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 49,
+    "char_start": 5568,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_50",
+    "text": "th poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 50,
+    "char_start": 5569,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_51",
+    "text": "h poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 51,
+    "char_start": 5570,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_52",
+    "text": "poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 52,
+    "char_start": 5571,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_53",
+    "text": "poor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 53,
+    "char_start": 5572,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_54",
+    "text": "oor safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 54,
+    "char_start": 5573,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_55",
+    "text": "or safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 55,
+    "char_start": 5574,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_56",
+    "text": "r safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 56,
+    "char_start": 5575,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_57",
+    "text": "safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 57,
+    "char_start": 5576,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_58",
+    "text": "safety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 58,
+    "char_start": 5577,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_59",
+    "text": "afety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 59,
+    "char_start": 5578,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_60",
+    "text": "fety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 60,
+    "char_start": 5579,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_61",
+    "text": "ety records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 61,
+    "char_start": 5580,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_62",
+    "text": "ty records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 62,
+    "char_start": 5581,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_63",
+    "text": "y records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 63,
+    "char_start": 5582,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_64",
+    "text": "records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 64,
+    "char_start": 5583,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_65",
+    "text": "records are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 65,
+    "char_start": 5584,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_66",
+    "text": "ecords are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 66,
+    "char_start": 5585,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_67",
+    "text": "cords are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 67,
+    "char_start": 5586,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_68",
+    "text": "ords are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 68,
+    "char_start": 5587,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_69",
+    "text": "rds are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 69,
+    "char_start": 5588,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_70",
+    "text": "ds are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 70,
+    "char_start": 5589,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_71",
+    "text": "s are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 71,
+    "char_start": 5590,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_72",
+    "text": "are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 72,
+    "char_start": 5591,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_73",
+    "text": "are subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 73,
+    "char_start": 5592,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_74",
+    "text": "re subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 74,
+    "char_start": 5593,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_75",
+    "text": "e subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 75,
+    "char_start": 5594,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_76",
+    "text": "subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 76,
+    "char_start": 5595,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_77",
+    "text": "subject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 77,
+    "char_start": 5596,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_78",
+    "text": "ubject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 78,
+    "char_start": 5597,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_79",
+    "text": "bject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 79,
+    "char_start": 5598,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_80",
+    "text": "ject to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 80,
+    "char_start": 5599,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_81",
+    "text": "ect to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 81,
+    "char_start": 5600,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_82",
+    "text": "ct to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 82,
+    "char_start": 5601,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_83",
+    "text": "t to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 83,
+    "char_start": 5602,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_84",
+    "text": "to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 84,
+    "char_start": 5603,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_85",
+    "text": "to removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 85,
+    "char_start": 5604,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_86",
+    "text": "o removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 86,
+    "char_start": 5605,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_87",
+    "text": "removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 87,
+    "char_start": 5606,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_88",
+    "text": "removal.",
+    "source": "platform_faq.txt",
+    "chunk_index": 88,
+    "char_start": 5607,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_89",
+    "text": "emoval.",
+    "source": "platform_faq.txt",
+    "chunk_index": 89,
+    "char_start": 5608,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_90",
+    "text": "moval.",
+    "source": "platform_faq.txt",
+    "chunk_index": 90,
+    "char_start": 5609,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_91",
+    "text": "oval.",
+    "source": "platform_faq.txt",
+    "chunk_index": 91,
+    "char_start": 5610,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_92",
+    "text": "val.",
+    "source": "platform_faq.txt",
+    "chunk_index": 92,
+    "char_start": 5611,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_93",
+    "text": "al.",
+    "source": "platform_faq.txt",
+    "chunk_index": 93,
+    "char_start": 5612,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_94",
+    "text": "l.",
+    "source": "platform_faq.txt",
+    "chunk_index": 94,
+    "char_start": 5613,
+    "char_end": 5615
+  },
+  {
+    "id": "platform_faq.txt_95",
+    "text": ".",
+    "source": "platform_faq.txt",
+    "chunk_index": 95,
+    "char_start": 5614,
+    "char_end": 5615
+  },
+  {
+    "id": "technical_specs.txt_0",
+    "text": "CONSTRUCTION MARKETPLACE - TECHNICAL SPECIFICATIONS\n\nDocument: Material and Technical Specifications\nVersion: 1.5\nLast Updated: March 2024\n\n---\n\nSECTION A: CONCRETE SPECIFICATIONS\n\nA1: General Concrete Requirements\n- Minimum compressive strength: 3,000 PSI for residential, 4,000 PSI for commercial.\n- Water-cement ratio: Maximum 0.45 for exposed surfaces, 0.50 for interior.\n- Slump: 3-5 inches for standard pours, 4-7 inches for pumped concrete.\n- Air entrainment: 5-7% for freeze-thaw environments.",
+    "source": "technical_specs.txt",
+    "chunk_index": 0,
+    "char_start": 0,
+    "char_end": 501
+  },
+  {
+    "id": "technical_specs.txt_1",
+    "text": "nches for pumped concrete.\n- Air entrainment: 5-7% for freeze-thaw environments.\n\nA2: Concrete Curing Requirements\n- Wet curing minimum 7 days for standard concrete.\n- Temperature must remain above 50°F during curing.\n- Curing compounds must meet ASTM C309 standards.\n- High-strength concrete may require extended curing periods.",
+    "source": "technical_specs.txt",
+    "chunk_index": 1,
+    "char_start": 421,
+    "char_end": 750
+  },
+  {
+    "id": "technical_specs.txt_2",
+    "text": "TM C309 standards.\n- High-strength concrete may require extended curing periods.\n\nA3: Reinforcement Requirements\n- Rebar grade: Grade 60 (minimum) for structural applications.\n- Concrete cover: 3 inches for footings, 2 inches for slabs, 1.5 inches for columns.\n- Lap splice length: Minimum 40 bar diameters for tension splices.\n\n---\n\nSECTION B: STRUCTURAL STEEL SPECIFICATIONS",
+    "source": "technical_specs.txt",
+    "chunk_index": 2,
+    "char_start": 670,
+    "char_end": 1046
+  },
+  {
+    "id": "technical_specs.txt_3",
+    "text": "diameters for tension splices.\n\n---\n\nSECTION B: STRUCTURAL STEEL SPECIFICATIONS\n\nB1: Steel Material Standards\n- All structural steel must conform to ASTM A36 or A992.\n- Bolts: ASTM A325 or A490 high-strength bolts for structural connections.\n- Welding: AWS D1.1 Structural Welding Code compliance required.\n- Surface preparation: SSPC-SP6 (commercial blast) minimum for painted steel.",
+    "source": "technical_specs.txt",
+    "chunk_index": 3,
+    "char_start": 966,
+    "char_end": 1351
+  },
+  {
+    "id": "technical_specs.txt_4",
+    "text": "d.\n- Surface preparation: SSPC-SP6 (commercial blast) minimum for painted steel.\n\nB2: Steel Fabrication Requirements\n- Shop drawings required for all structural steel prior to fabrication.\n- Mill certifications must accompany all steel deliveries.\n- Non-destructive testing (NDT) for critical welds in high-occupancy structures.\n\n---\n\nSECTION C: FOUNDATION SPECIFICATIONS",
+    "source": "technical_specs.txt",
+    "chunk_index": 4,
+    "char_start": 1271,
+    "char_end": 1642
+  },
+  {
+    "id": "technical_specs.txt_5",
+    "text": "l welds in high-occupancy structures.\n\n---\n\nSECTION C: FOUNDATION SPECIFICATIONS\n\nC1: Soil Investigation Requirements\n- Geotechnical investigation required for all commercial projects.\n- Soil bearing capacity must be determined before foundation design.\n- Expansive soils require special foundation design (drilled piers, post-tensioned slabs).",
+    "source": "technical_specs.txt",
+    "chunk_index": 5,
+    "char_start": 1562,
+    "char_end": 1906
+  },
+  {
+    "id": "technical_specs.txt_6",
+    "text": "e soils require special foundation design (drilled piers, post-tensioned slabs).\n\nC2: Foundation Types and Applications\nShallow Foundations:\n- Spread footings: For well-bearing soil with capacity >1,500 psf.\n- Mat foundations: For poor soil conditions or heavy loads.\n- Minimum frost depth requirements vary by geographic location.",
+    "source": "technical_specs.txt",
+    "chunk_index": 6,
+    "char_start": 1826,
+    "char_end": 2157
+  },
+  {
+    "id": "technical_specs.txt_7",
+    "text": "or heavy loads.\n- Minimum frost depth requirements vary by geographic location.\n\nDeep Foundations:\n- Driven piles: Steel H-piles, precast concrete piles for deep bearing layers.\n- Drilled piers (caissons): For large load concentrations.\n- Micro-piles: For limited access sites or retrofit applications.\n\n---\n\nSECTION D: MECHANICAL, ELECTRICAL, PLUMBING (MEP) SPECIFICATIONS",
+    "source": "technical_specs.txt",
+    "chunk_index": 7,
+    "char_start": 2077,
+    "char_end": 2451
+  },
+  {
+    "id": "technical_specs.txt_8",
+    "text": "ications.\n\n---\n\nSECTION D: MECHANICAL, ELECTRICAL, PLUMBING (MEP) SPECIFICATIONS\n\nD1: HVAC Requirements\n- Energy efficiency: Must meet ASHRAE 90.1 standards.\n- Fresh air ventilation: Minimum 0.15 CFM per square foot per ASHRAE 62.1.\n- Equipment access: Minimum 36-inch clearance for maintenance.\n- Ductwork: Sheet metal per SMACNA standards; insulated to meet energy codes.",
+    "source": "technical_specs.txt",
+    "chunk_index": 8,
+    "char_start": 2371,
+    "char_end": 2744
+  },
+  {
+    "id": "technical_specs.txt_9",
+    "text": "e.\n- Ductwork: Sheet metal per SMACNA standards; insulated to meet energy codes.\n\nD2: Electrical Requirements\n- Service entrance: Sized per NEC Article 230.\n- Grounding: Per NEC Article 250.\n- GFCI protection: All kitchen, bath, garage, outdoor, and basement receptacles.\n- AFCI protection: All bedroom circuits in residential construction.\n- Commercial lighting: Must meet ASHRAE 90.1 lighting power density limits.",
+    "source": "technical_specs.txt",
+    "chunk_index": 9,
+    "char_start": 2664,
+    "char_end": 3080
+  },
+  {
+    "id": "technical_specs.txt_10",
+    "text": "ion.\n- Commercial lighting: Must meet ASHRAE 90.1 lighting power density limits.\n\nD3: Plumbing Requirements\n- Water supply: Minimum 45 PSI at fixtures, maximum 80 PSI.\n- Hot water temperature: 120°F at fixtures for scalding prevention; 140°F at water heater.\n- Drain, waste, vent: Per International Plumbing Code (IPC) or local equivalent.\n- Backflow prevention: Required per local water authority standards.\n\n---\n\nSECTION E: ROOFING SPECIFICATIONS",
+    "source": "technical_specs.txt",
+    "chunk_index": 10,
+    "char_start": 3000,
+    "char_end": 3448
+  },
+  {
+    "id": "technical_specs.txt_11",
+    "text": "red per local water authority standards.\n\n---\n\nSECTION E: ROOFING SPECIFICATIONS\n\nE1: Sloped Roofing (>2:12 pitch)\n- Asphalt shingles: Minimum 30-year architectural grade.\n- Ice and water shield: Required at eaves, valleys, and penetrations.\n- Underlayment: Synthetic minimum in all new construction.\n- Metal roofing: Minimum 24-gauge; concealed fastener systems preferred.",
+    "source": "technical_specs.txt",
+    "chunk_index": 11,
+    "char_start": 3368,
+    "char_end": 3741
+  },
+  {
+    "id": "technical_specs.txt_12",
+    "text": "uction.\n- Metal roofing: Minimum 24-gauge; concealed fastener systems preferred.\n\nE2: Low-Slope Roofing (<2:12 pitch)\n- TPO membrane: Minimum 60-mil thickness; heat-welded seams.\n- EPDM membrane: Minimum 60-mil; fully-adhered or ballasted.\n- Modified bitumen: SBS or APP-modified; torch-down or cold-applied.\n- Drainage: Maximum 1/4 inch per foot slope to drains.",
+    "source": "technical_specs.txt",
+    "chunk_index": 12,
+    "char_start": 3661,
+    "char_end": 4024
+  },
+  {
+    "id": "technical_specs.txt_13",
+    "text": "rch-down or cold-applied.\n- Drainage: Maximum 1/4 inch per foot slope to drains.\n\nE3: Roofing Warranties\n- Manufacturer product warranty: 20-30 years depending on system.\n- Workmanship warranty: Minimum 2 years required by platform.\n- NDL (No Dollar Limit) warranties available for qualifying systems.\n\n---\n\nSECTION F: SUSTAINABILITY AND GREEN BUILDING",
+    "source": "technical_specs.txt",
+    "chunk_index": 13,
+    "char_start": 3944,
+    "char_end": 4296
+  },
+  {
+    "id": "technical_specs.txt_14",
+    "text": "lable for qualifying systems.\n\n---\n\nSECTION F: SUSTAINABILITY AND GREEN BUILDING\n\nF1: Energy Efficiency Standards\n- New construction: Must meet current IECC (International Energy Conservation Code).\n- Commercial: ASHRAE 90.1 compliance required.\n- Green building certifications accepted: LEED, ENERGY STAR, Green Globes.",
+    "source": "technical_specs.txt",
+    "chunk_index": 14,
+    "char_start": 4216,
+    "char_end": 4536
+  },
+  {
+    "id": "technical_specs.txt_15",
+    "text": "ired.\n- Green building certifications accepted: LEED, ENERGY STAR, Green Globes.\n\nF2: Sustainable Materials\n- Recycled content: Encouraged for steel (>25% recycled), carpet (>10%), concrete aggregate.\n- Regional materials: Preference for materials sourced within 500 miles.\n- Low-VOC: Required for interior paints, adhesives, sealants, and flooring.\n- Certified wood: FSC-certified lumber preferred for wood framing.",
+    "source": "technical_specs.txt",
+    "chunk_index": 15,
+    "char_start": 4456,
+    "char_end": 4872
+  },
+  {
+    "id": "technical_specs.txt_16",
+    "text": "and flooring.\n- Certified wood: FSC-certified lumber preferred for wood framing.\n\nF3: Water Conservation\n- Low-flow fixtures: Required in all new construction.\n- Irrigation efficiency: Drip irrigation and smart controllers for landscaping.\n- Rainwater harvesting: Permitted in most jurisdictions; check local regulations.\n- Greywater reuse: Allowed for irrigation in states with enabling legislation.\n\n---\n\nSECTION G: CONSTRUCTION WASTE MANAGEMENT",
+    "source": "technical_specs.txt",
+    "chunk_index": 16,
+    "char_start": 4792,
+    "char_end": 5239
+  },
+  {
+    "id": "technical_specs.txt_17",
+    "text": "states with enabling legislation.\n\n---\n\nSECTION G: CONSTRUCTION WASTE MANAGEMENT\n\nG1: Waste Diversion Requirements\n- Projects over $500,000: Minimum 50% construction waste diversion from landfill.\n- Separate waste streams required: Wood, metal, drywall, concrete, cardboard.\n- Hazardous waste (lead paint, asbestos, PCBs): Licensed disposal contractors required.",
+    "source": "technical_specs.txt",
+    "chunk_index": 17,
+    "char_start": 5159,
+    "char_end": 5521
+  },
+  {
+    "id": "technical_specs.txt_18",
+    "text": "dous waste (lead paint, asbestos, PCBs): Licensed disposal contractors required.\n\nG2: Material Salvage\n- Pre-demolition surveys recommended for salvage opportunities.\n- Architectural salvage encouraged for doors, hardware, fixtures.\n- Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 18,
+    "char_start": 5441,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_19",
+    "text": ".\n- Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 19,
+    "char_start": 5672,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_20",
+    "text": "- Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 20,
+    "char_start": 5673,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_21",
+    "text": "- Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 21,
+    "char_start": 5674,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_22",
+    "text": "Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 22,
+    "char_start": 5675,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_23",
+    "text": "Material exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 23,
+    "char_start": 5676,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_24",
+    "text": "aterial exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 24,
+    "char_start": 5677,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_25",
+    "text": "terial exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 25,
+    "char_start": 5678,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_26",
+    "text": "erial exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 26,
+    "char_start": 5679,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_27",
+    "text": "rial exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 27,
+    "char_start": 5680,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_28",
+    "text": "ial exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 28,
+    "char_start": 5681,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_29",
+    "text": "al exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 29,
+    "char_start": 5682,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_30",
+    "text": "l exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 30,
+    "char_start": 5683,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_31",
+    "text": "exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 31,
+    "char_start": 5684,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_32",
+    "text": "exchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 32,
+    "char_start": 5685,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_33",
+    "text": "xchanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 33,
+    "char_start": 5686,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_34",
+    "text": "changes and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 34,
+    "char_start": 5687,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_35",
+    "text": "hanges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 35,
+    "char_start": 5688,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_36",
+    "text": "anges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 36,
+    "char_start": 5689,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_37",
+    "text": "nges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 37,
+    "char_start": 5690,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_38",
+    "text": "ges and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 38,
+    "char_start": 5691,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_39",
+    "text": "es and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 39,
+    "char_start": 5692,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_40",
+    "text": "s and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 40,
+    "char_start": 5693,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_41",
+    "text": "and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 41,
+    "char_start": 5694,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_42",
+    "text": "and donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 42,
+    "char_start": 5695,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_43",
+    "text": "nd donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 43,
+    "char_start": 5696,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_44",
+    "text": "d donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 44,
+    "char_start": 5697,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_45",
+    "text": "donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 45,
+    "char_start": 5698,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_46",
+    "text": "donations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 46,
+    "char_start": 5699,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_47",
+    "text": "onations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 47,
+    "char_start": 5700,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_48",
+    "text": "nations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 48,
+    "char_start": 5701,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_49",
+    "text": "ations to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 49,
+    "char_start": 5702,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_50",
+    "text": "tions to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 50,
+    "char_start": 5703,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_51",
+    "text": "ions to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 51,
+    "char_start": 5704,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_52",
+    "text": "ons to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 52,
+    "char_start": 5705,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_53",
+    "text": "ns to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 53,
+    "char_start": 5706,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_54",
+    "text": "s to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 54,
+    "char_start": 5707,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_55",
+    "text": "to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 55,
+    "char_start": 5708,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_56",
+    "text": "to Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 56,
+    "char_start": 5709,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_57",
+    "text": "o Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 57,
+    "char_start": 5710,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_58",
+    "text": "Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 58,
+    "char_start": 5711,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_59",
+    "text": "Habitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 59,
+    "char_start": 5712,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_60",
+    "text": "abitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 60,
+    "char_start": 5713,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_61",
+    "text": "bitat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 61,
+    "char_start": 5714,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_62",
+    "text": "itat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 62,
+    "char_start": 5715,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_63",
+    "text": "tat for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 63,
+    "char_start": 5716,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_64",
+    "text": "at for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 64,
+    "char_start": 5717,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_65",
+    "text": "t for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 65,
+    "char_start": 5718,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_66",
+    "text": "for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 66,
+    "char_start": 5719,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_67",
+    "text": "for Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 67,
+    "char_start": 5720,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_68",
+    "text": "or Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 68,
+    "char_start": 5721,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_69",
+    "text": "r Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 69,
+    "char_start": 5722,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_70",
+    "text": "Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 70,
+    "char_start": 5723,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_71",
+    "text": "Humanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 71,
+    "char_start": 5724,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_72",
+    "text": "umanity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 72,
+    "char_start": 5725,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_73",
+    "text": "manity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 73,
+    "char_start": 5726,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_74",
+    "text": "anity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 74,
+    "char_start": 5727,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_75",
+    "text": "nity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 75,
+    "char_start": 5728,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_76",
+    "text": "ity ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 76,
+    "char_start": 5729,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_77",
+    "text": "ty ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 77,
+    "char_start": 5730,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_78",
+    "text": "y ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 78,
+    "char_start": 5731,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_79",
+    "text": "ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 79,
+    "char_start": 5732,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_80",
+    "text": "ReStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 80,
+    "char_start": 5733,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_81",
+    "text": "eStores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 81,
+    "char_start": 5734,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_82",
+    "text": "Stores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 82,
+    "char_start": 5735,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_83",
+    "text": "tores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 83,
+    "char_start": 5736,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_84",
+    "text": "ores permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 84,
+    "char_start": 5737,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_85",
+    "text": "res permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 85,
+    "char_start": 5738,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_86",
+    "text": "es permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 86,
+    "char_start": 5739,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_87",
+    "text": "s permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 87,
+    "char_start": 5740,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_88",
+    "text": "permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 88,
+    "char_start": 5741,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_89",
+    "text": "permitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 89,
+    "char_start": 5742,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_90",
+    "text": "ermitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 90,
+    "char_start": 5743,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_91",
+    "text": "rmitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 91,
+    "char_start": 5744,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_92",
+    "text": "mitted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 92,
+    "char_start": 5745,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_93",
+    "text": "itted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 93,
+    "char_start": 5746,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_94",
+    "text": "tted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 94,
+    "char_start": 5747,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_95",
+    "text": "ted.",
+    "source": "technical_specs.txt",
+    "chunk_index": 95,
+    "char_start": 5748,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_96",
+    "text": "ed.",
+    "source": "technical_specs.txt",
+    "chunk_index": 96,
+    "char_start": 5749,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_97",
+    "text": "d.",
+    "source": "technical_specs.txt",
+    "chunk_index": 97,
+    "char_start": 5750,
+    "char_end": 5752
+  },
+  {
+    "id": "technical_specs.txt_98",
+    "text": ".",
+    "source": "technical_specs.txt",
+    "chunk_index": 98,
+    "char_start": 5751,
+    "char_end": 5752
+  }
+]

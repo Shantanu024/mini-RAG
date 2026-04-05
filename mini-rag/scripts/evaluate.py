@@ -185,7 +185,8 @@ def run_evaluation():
         print(f"    Word count:      {ans_scores['answer_length']}")
         print(f"    Length OK:       {'✅' if ans_scores['reasonable_length'] else '⚠️'}")
         print(f"  Latency:         {elapsed:.2f}s")
-        print(f"  Answer preview:  {result['answer'][:200]}...")
+        answer_preview = result['answer'][:200]
+        print(f"  Answer preview:  {answer_preview}{'...' if len(result['answer']) > 200 else ''}")
 
         results.append({
             "question_id": test["id"],

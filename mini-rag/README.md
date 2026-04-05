@@ -12,7 +12,8 @@
 - [Quick Start](#quick-start)
 - [Configuration](#configuration)
 - [API Reference](#api-reference)
-- [Evaluation Results](#evaluation-results)
+- [Evaluation](#evaluation)
+- [Deployment](#deployment)
 - [Design Decisions](#design-decisions)
 
 ---
@@ -23,15 +24,15 @@ ConstructIQ answers user questions **strictly from internal construction documen
 
 ### Features
 
-- ✅ Document chunking with smart boundary detection
-- ✅ Semantic embeddings via `sentence-transformers`
-- ✅ FAISS vector index (cosine similarity)
-- ✅ Grounded LLM answer generation via OpenRouter
-- ✅ Full transparency: retrieved chunks shown alongside every answer
-- ✅ Performance metrics (retrieval time, generation time, model name)
-- ✅ REST API with FastAPI
-- ✅ Custom chat UI frontend
-- ✅ Quality evaluation script (12 test questions)
+- Document chunking with smart boundary detection
+- Semantic embeddings via Google Gemini API (`gemini-embedding-001`, 3072-dim)
+- FAISS vector index (cosine similarity)
+- Grounded LLM answer generation via OpenRouter (with model fallbacks)
+- Full transparency: retrieved chunks shown alongside every answer
+- Performance metrics (retrieval time, generation time, model name)
+- REST API with FastAPI + auto-generated OpenAPI docs
+- Custom chat UI frontend (zero dependencies)
+- Quality evaluation script (12 test questions)
 
 ---
 
@@ -39,15 +40,15 @@ ConstructIQ answers user questions **strictly from internal construction documen
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    INDEXING PIPELINE                    │
+│                    INDEXING PIPELINE                     │
 │                                                         │
 │  Documents (.txt) ──► Chunker ──► Embedder ──► FAISS   │
-│                     (512 chars,   (MiniLM-L6)  Index   │
-│                      80 overlap)                        │
+│                     (512 chars,   (Gemini     Index     │
+│                      80 overlap)  API 3072d)            │
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│                    QUERY PIPELINE                       │
+│                    QUERY PIPELINE                        │
 │                                                         │
 │  User Query ──► Embed Query ──► FAISS Search (top-k)   │
 │                                       │                 │
@@ -63,11 +64,11 @@ ConstructIQ answers user questions **strictly from internal construction documen
 
 | Component | Technology | Reason |
 |-----------|-----------|--------|
-| Embeddings | `all-MiniLM-L6-v2` | Fast (384-dim), high quality on semantic tasks, runs locally |
-| Vector DB | FAISS (IndexFlatIP) | No infrastructure needed, cosine similarity via L2-normalized inner product |
-| LLM | Mistral-7B via OpenRouter | Free tier, good instruction following, low hallucination rate |
+| Embeddings | Gemini `gemini-embedding-001` | 3072-dim, high quality, free API tier, no local ML frameworks needed |
+| Vector DB | FAISS (`IndexFlatIP`) | Zero infrastructure, cosine similarity via L2-normalized inner product |
+| LLM | Llama 3.3 70B via OpenRouter | Free tier, excellent instruction following, low hallucination rate |
 | API | FastAPI | Async, auto OpenAPI docs, Pydantic validation |
-| Frontend | Vanilla HTML/CSS/JS | No build toolchain needed, zero dependencies |
+| Frontend | Vanilla HTML/CSS/JS | No build toolchain, zero dependencies, instant deployment |
 
 ---
 
@@ -75,10 +76,11 @@ ConstructIQ answers user questions **strictly from internal construction documen
 
 **Backend:**
 - Python 3.10+
-- `sentence-transformers` — embedding generation
 - `faiss-cpu` — vector similarity search
 - `FastAPI` + `uvicorn` — REST API
-- `requests` — OpenRouter API client
+- `requests` — Gemini & OpenRouter API client
+- `numpy` — embedding array handling
+- `python-dotenv` — environment variable loading
 
 **Frontend:**
 - HTML5, CSS3, Vanilla JavaScript
@@ -95,14 +97,21 @@ cd backend
 pip install -r requirements.txt
 ```
 
-### 2. Set API key (optional but recommended)
+### 2. Set API keys
 
 ```bash
-export OPENROUTER_API_KEY="your-key-here"
-```
-Get a free key at https://openrouter.ai — the free `mistralai/mistral-7b-instruct:free` model works out of the box.
+# Required — for embeddings
+export GEMINI_API_KEY="your-gemini-key"
 
-Without the key, the app runs in **fallback mode** — it still retrieves and shows chunks, but skips LLM generation.
+# Optional — for AI-generated answers (without this, raw chunks are shown)
+export OPENROUTER_API_KEY="your-openrouter-key"
+```
+
+Get free keys at:
+- **Gemini**: https://aistudio.google.com/app/apikey
+- **OpenRouter**: https://openrouter.ai
+
+Or copy `.env.example` to `.env` and fill in your keys.
 
 ### 3. Start the backend
 
@@ -113,8 +122,10 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 On first start, it will:
 - Load documents from `/documents/`
-- Generate embeddings
+- Generate embeddings via Gemini API
 - Build and save the FAISS index
+
+Subsequent starts load the pre-built index instantly.
 
 ### 4. Open the frontend
 
@@ -127,7 +138,7 @@ python -m http.server 3000
 # then visit http://localhost:3000
 ```
 
-### 5. Run evaluation
+### 5. Run evaluation (optional)
 
 ```bash
 cd scripts
@@ -142,8 +153,11 @@ All configuration is at the top of `backend/app.py`:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `EMBEDDING_MODEL` | `all-MiniLM-L6-v2` | HuggingFace embedding model |
-| `OPENROUTER_MODEL` | `mistralai/mistral-7b-instruct:free` | LLM model via OpenRouter |
+| `GEMINI_API_KEY` | *(env var)* | **Required.** Google Gemini API key for embeddings |
+| `OPENROUTER_API_KEY` | *(env var)* | Optional. OpenRouter API key for LLM answers |
+| `GEMINI_EMBED_MODEL` | `gemini-embedding-001` | Gemini embedding model |
+| `EMBEDDING_DIM` | `3072` | Embedding dimension (must match model) |
+| `OPENROUTER_MODEL` | `meta-llama/llama-3.3-70b-instruct:free` | Primary LLM model |
 | `TOP_K` | `5` | Number of chunks to retrieve |
 | `CHUNK_SIZE` | `512` | Characters per chunk |
 | `CHUNK_OVERLAP` | `80` | Character overlap between chunks |
@@ -151,6 +165,12 @@ All configuration is at the top of `backend/app.py`:
 ---
 
 ## API Reference
+
+### `GET /`
+Returns API status.
+
+### `GET /health`
+Returns pipeline health and statistics.
 
 ### `POST /query`
 
@@ -175,25 +195,28 @@ All configuration is at the top of `backend/app.py`:
     }
   ],
   "answer": "Based on the documents, construction project delays are caused by...",
-  "model": "mistralai/mistral-7b-instruct:free",
+  "model": "meta-llama/llama-3.3-70b-instruct:free",
   "retrieval_time_seconds": 0.021,
   "generation_time_seconds": 2.3,
   "total_time_seconds": 2.321
 }
 ```
 
-### `GET /health`
-Returns pipeline status and stats.
-
 ### `GET /stats`
 Returns index statistics (chunk count, document list, model info).
 
 ### `POST /rebuild-index`
-Forces rebuilding the vector index from documents.
+Force rebuild the vector index from documents. Send `{"confirm": true}`.
+
+### `GET /chunks`
+List indexed chunks. Optional `?source=filename.txt&limit=50` query params.
+
+### `GET /docs`
+Auto-generated interactive API documentation (Swagger UI).
 
 ---
 
-## Evaluation Results
+## Evaluation
 
 The evaluation script (`scripts/evaluate.py`) tests 12 questions derived from the documents.
 
@@ -210,13 +233,58 @@ The evaluation script (`scripts/evaluate.py`) tests 12 questions derived from th
 
 ---
 
+## Deployment
+
+### Backend — Render
+
+| Setting | Value |
+|---------|-------|
+| **Root Directory** | `backend` |
+| **Runtime** | Python 3 |
+| **Build Command** | `pip install -r requirements.txt` |
+| **Start Command** | `uvicorn app:app --host 0.0.0.0 --port $PORT` |
+
+**Environment Variables:**
+
+| Variable | Required | Value |
+|----------|----------|-------|
+| `GEMINI_API_KEY` | ✅ Yes | Your Gemini API key |
+| `OPENROUTER_API_KEY` | ⬜ Optional | Your OpenRouter API key |
+| `PYTHON_VERSION` | ⬜ Optional | `3.11.0` (if needed) |
+
+> **Note:** The pre-built FAISS index (`backend/vector_store/`) is committed to git. Render loads it on startup — no rebuild needed unless you change documents.
+
+### Frontend — Vercel
+
+| Setting | Value |
+|---------|-------|
+| **Root Directory** | `frontend` |
+| **Framework Preset** | Other |
+| **Build Command** | *(leave empty)* |
+| **Output Directory** | `.` |
+
+**No environment variables needed.** The backend URL is set in `index.html` line 433 (`DEPLOYED_API_URL`).
+
+> **Important:** Before deploying, update `DEPLOYED_API_URL` in `frontend/index.html` to your Render backend URL (e.g., `https://your-app.onrender.com`).
+
+---
+
+## Adding Your Own Documents
+
+1. Place `.txt` files in the `documents/` directory
+2. Start the backend, then call `POST /rebuild-index` with `{"confirm": true}`
+3. The system re-embeds and re-indexes automatically
+4. Commit the updated `backend/vector_store/` files for deployment
+
+---
+
 ## Design Decisions
 
-### Why `all-MiniLM-L6-v2`?
-- 384-dimensional embeddings — small and fast
-- Excellent semantic similarity benchmarks (SBERT leaderboard)
-- Runs fully locally — no API cost for embeddings
-- Downloads automatically via `sentence-transformers`
+### Why Gemini API for Embeddings?
+- 3072-dimensional embeddings — high quality semantic representation
+- Free API tier — no cost for moderate usage
+- No local ML frameworks needed — keeps deployment under 100 MB
+- REST API call — lightweight `requests` library instead of heavy `torch` + `transformers`
 
 ### Why FAISS over Pinecone/Weaviate?
 - Zero infrastructure setup
@@ -237,16 +305,8 @@ This + low temperature (0.1) ensures highly grounded responses.
 
 ### Why OpenRouter?
 - Free tier available (no billing required for free models)
-- Single API key unlocks many open-source models (Mistral, Llama, etc.)
-- Easy to swap models via config variable
-
----
-
-## Adding Your Own Documents
-
-1. Place `.txt` files in the `documents/` directory
-2. Call `POST /rebuild-index` with `{"confirm": true}`
-3. The system re-embeds and re-indexes automatically
+- Single API key unlocks many open-source models (Llama, Gemma, Mistral)
+- Built-in model fallback chain if primary model is unavailable
 
 ---
 
@@ -257,7 +317,7 @@ mini-rag/
 ├── backend/
 │   ├── app.py              # Main application (RAG pipeline + FastAPI)
 │   ├── requirements.txt
-│   └── vector_store/       # Auto-created on first run
+│   └── vector_store/       # Pre-built index (committed to git)
 │       ├── faiss_index.bin
 │       └── chunks.json
 ├── documents/
@@ -265,12 +325,11 @@ mini-rag/
 │   ├── platform_faq.txt
 │   └── technical_specs.txt
 ├── frontend/
-│   └── index.html          # Single-file chat UI
+│   ├── index.html          # Single-file chat UI
+│   └── vercel.json         # Vercel deployment config
 ├── scripts/
 │   └── evaluate.py         # Quality evaluation script
 ├── .env.example            # API key template
 ├── .gitignore
-├── start.bat               # Windows launcher
-├── start.sh                # Linux/macOS launcher
 └── README.md
 ```
